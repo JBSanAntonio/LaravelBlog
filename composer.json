@@ -5,8 +5,8 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*"
-		/*will have line items here for every separate package we install - no need to put on github*/
+		"laravel/framework": "4.2.*",
+		"fzaninotto/faker": "^1.5"
 	},
 	"autoload": {
 		"classmap": [

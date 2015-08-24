@@ -10,8 +10,41 @@
 | and give it the Closure to execute when that URI is requested.
 |
 */
+Route::resource('posts', 'PostsController');
 
-Route::get('/', function()
+Route::get('/', 'HomeController@showWelcome');
+
+Route::get('resume', 'HomeController@showResume');
+
+Route::get('portfolio', 'HomeController@showPortfolio');
+
+Route::get('calculator', 'HomeController@showCalculator');
+
+Route::get('form', array('as' => 'myform', function()
 {
-	return View::make('hello');
+	if(!Input::has('title/*username*/')) 
+	{
+/*		return View::make('form');
+*/		return Redirect::back()->withInput();
+		$input = Input::all();
+	}
+}));
+
+Route::post('form', function()
+{
+	/*$input = Input::all();*/
+	return var_dump($input::all());
+
+	if(!Input::has('title') && !Input::has('body')) 
+	{
+		return Redirect::back()->withInput();
+	}
 });
+
+Route::get('orm-test', function ()
+{
+	$post = Post::find(1);
+	$post->delete();
+});
+
+?>

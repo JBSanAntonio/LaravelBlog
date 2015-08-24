@@ -1,0 +1,70 @@
+.title {
+	margin: 300px;
+	text-align: center;
+}
+
+body {
+	font-family: avenir, Book Antiqua, "Helvetica Neue", Helvetica, Arial,sans-serif;
+}
+.resumeBody {
+	width: 100%;
+	text-align: left;
+	padding: 1.5em;
+	color: black;
+	font-size: 1em;
+	margin: 2em;
+}
+.nameAddress {
+	margin-bottom: 1em;
+	padding-bottom: 2em;
+}
+.address {
+	line-height: 1em;
+	font-size: 1.25em;
+}
+.logo {
+	text-align: left;
+}
+.education {
+	margin-bottom: 2em;	
+}
+.profSkills {
+	padding: 0.2em;
+	margin-bottom: 2em;
+}
+.skillsBullets {
+	width: 85%;
+	text-align: left;
+}
+.webDevProjects {
+
+}
+.sampleProjects {
+	text-align: left;
+}
+ul {
+	font-size: 1em;
+}
+
+h1 {
+	text-align: left;
+	font-weight: bold;
+	color: #12129E;
+}
+h2 {
+	border-top: 0.07em solid #12129E;
+	margin-top: 1em;
+	padding: 0.5em;
+	font-size: 1.5em;
+}
+h3 {
+	margin-top: 2em;
+}
+h5 {
+	text-align: center;
+	background-color: #D5D7DF;
+}
+.p2Header {
+	margin: 6em 2em 1em 1em;
+	text-align: right;
+}
