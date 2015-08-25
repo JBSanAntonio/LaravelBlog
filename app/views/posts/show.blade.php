@@ -5,8 +5,10 @@
 @section('content')
 
 <div>
+	<h1>Post Number: {{$post->id}}</h1>
 	<h1>Post Title: </h1><h4>{{{$post->title}}}</h4>
-	<h1>Content: </h1><h4>{{{ $post->body}}}</h4>
+	<h1>Post Content: </h1><h4>{{{ $post->body}}}</h4>
+	<h1>Post Created: </h1><h4>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h4>
 </div>
 
 <div "col-md-6">

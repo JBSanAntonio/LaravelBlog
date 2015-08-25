@@ -13,6 +13,10 @@
 
 	@foreach($posts as $post)
 	<h3>Post Title {{{$post->title}}}</h3>
+
+	<h5>Post Created: {{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h5>
+
+
 	<a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>
 	@endforeach
 
