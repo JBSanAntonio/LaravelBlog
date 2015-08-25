@@ -16,6 +16,9 @@
  --}}
 
 	<a href="{{{action('PostsController@edit',$post->id)}}}" class="btn btn-default">Edit Post<span class = "glyphicon glyphicon-pencil"></span></a>
+
+	<a href="{{{action('PostsController@destroy',$post->id)}}}" method="DELETE" type="button" class="btn btn-danger" onsubmit="return confirm('Are you sure to delete the customer: {{ $post->id }}')">Delete Post<span class = "glyphicon glyphicon-trash"></span></a>
+
 </div>
 
 

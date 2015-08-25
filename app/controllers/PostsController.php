@@ -46,10 +46,21 @@ class PostsController extends \BaseController {
 
 	    // attempt validation
 	    if ($validator->fails()) {
+	    	// set flash data
+			Session::flash('errorMessage', 'Unable to save input - please try again.');
+
+			// retrieve flash data (same as any other session variable)
+			$value = Session::get('key');
+
 	        // validation failed, redirect to the post create page with validation errors and old inputs
 	        return Redirect::back()->withInput()->withErrors($validator);
 	    } else {
 	        // validation succeeded, create and save the post
+	        // set flash data
+			Session::flash('successMessage', 'Your post was successfully added.');
+
+			// retrieve flash data (same as any other session variable)
+			$value = Session::get('key');
 	    }
 		//this is like ...if(not corect) { return Redirect::back()->withInput(); else...*/
 		/*var_dump(Input::all();*/
@@ -76,7 +87,19 @@ class PostsController extends \BaseController {
 		if(!$post)
 		{
 			return Redirect::back();
+
+			// set flash data
+			Session::flash('errorMessage', 'Unable to find that post - please try again.');
+
+			// retrieve flash data (same as any other session variable)
+			$value = Session::get('key');
 		}
+
+		 	// set flash data
+			Session::flash('successMessage', 'Your post was successfully found.');
+
+			// retrieve flash data (same as any other session variable)
+			$value = Session::get('key');
 
 		return View::make('posts.show')->with('post', $post);
 		/*return 'This page shows a specific post by id number';*/
@@ -93,10 +116,15 @@ class PostsController extends \BaseController {
 		//
 		$post = Post::find($id);
 
+			// set flash data
+			Session::flash('successMessage', 'Edit selected post below.');
+
+			// retrieve flash data (same as any other session variable)
+			$value = Session::get('key');
+
 		return View::make('posts.edit')->with('post', $post);
 		return 'This page shows a post by id number and lets you edit it';
 	}
-
 
 	/**
 	 * Update the specified resource in storage.
@@ -112,8 +140,14 @@ class PostsController extends \BaseController {
 		$post->body=Input::get('body');
 		$post->save();
 
-/*		return Redirect::action('PostsController@show', array($id));
-*/		return Redirect::back();	
+		// set flash data
+		Session::flash('successMessage', 'Your update was successful.');
+
+		// retrieve flash data (same as any other session variable)
+		$value = Session::get('key');
+	
+		return Redirect::action('PostsController@show', array($id));
+		/*return Redirect::back();	*/
 	}
 
 
@@ -127,6 +161,12 @@ class PostsController extends \BaseController {
 	{
 		$post=Post::find($id);
 		$post->delete();
+
+		// set flash data
+		Session::flash('successMessage', 'You successfully deleted the selected post.');
+
+		// retrieve flash data (same as any other session variable)
+		$value = Session::get('key');
 
 		return Redirect::action('PostsController@index');
 	}
