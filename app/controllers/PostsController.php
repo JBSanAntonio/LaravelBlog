@@ -2,6 +2,13 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+	{
+		/*makes sure user is authenticated before take any actions; filter file acts*/
+		parent::__construct();
+		$this->beforeFilter('auth', array('except' => array('index', 'show')));
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -10,11 +17,21 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		//show all listings here
-		/*$posts=Post::all();*/
-	    $posts = Post::paginate(4);
-	    return View::make('posts.index')->with(array('posts' => $posts));
+		$query = Post::with('user');
+
+		$search=Input::get('search');
+
+		if (Input::has('search')) {
+			$query->where('title', 'like', '%'. $search . "%")
+				  ->orWhere('body', 'like', '%' . $search . "%")
+				  ->orWhereHas('user', function($q) use ($search){			
+					$q->where('first_name', 'like', '%' . $search . "%")
+					  ->orWhere('last_name', 'like', '%' . $search . "%");
+			});
+		}
+		$posts = $query->orderBy('created_at', 'desc')->paginate(10);
+    
 		return View::make('posts.index')->with('posts', $posts);
-		return 'You are on index which shows a list of posts';
 	}
 
 	/**
@@ -46,6 +63,9 @@ class PostsController extends \BaseController {
 
 	    // attempt validation
 	    if ($validator->fails()) {
+
+	    	Log::info('This is some useful information.');
+
 	    	// set flash data
 			Session::flash('errorMessage', 'Unable to save input - please try again.');
 
@@ -55,7 +75,6 @@ class PostsController extends \BaseController {
 	        // validation failed, redirect to the post create page with validation errors and old inputs
 	        return Redirect::back()->withInput()->withErrors($validator);
 	    } else {
-	        // validation succeeded, create and save the post
 	        // set flash data
 			Session::flash('successMessage', 'Your post was successfully added.');
 
@@ -65,10 +84,13 @@ class PostsController extends \BaseController {
 		//this is like ...if(not corect) { return Redirect::back()->withInput(); else...*/
 		/*var_dump(Input::all();*/
 		
-		$post = new Post();
-		$post->title=Input::get('title');
-		$post->body=Input::get('body');
-		$post->save();
+	        // validation succeeded, create and save the post
+			$post = new Post();
+			$post->title=Input::get('title');
+			$post->body=Input::get('body');
+			/*need to add Auth::id() for create post to work*/
+			$post->user_id = Auth::id();
+			$post->save();
 
 		return Redirect::action('PostsController@index');
 	}
@@ -82,19 +104,33 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		// get the user with an id of 1
+		/*$user = User::find(1);*/
+
+		// get the user's posts
+		/*$posts = $user->posts;*/
+
+		// get the post with an id of 1
 		$post = Post::find($id);
+
 		if(!$post)
 		{
-			return Redirect::back();
-
+			/*return Redirect::back();*/
+			
 			// set flash data
 			Session::flash('errorMessage', 'Unable to find that post - please try again.');
-
-			// retrieve flash data (same as any other session variable)
-			$value = Session::get('key');
+			
+			App::abort(404);
 		}
 
+		// get the user's posts
+		$user = $post->user;
+
+		$data = array(
+				'post' => $post,
+				'user' => $user
+				);
+		//
 		 	// set flash data
 			Session::flash('successMessage', 'Your post was successfully found.');
 

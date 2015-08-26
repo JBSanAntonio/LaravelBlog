@@ -14,11 +14,17 @@ Route::resource('posts', 'PostsController');
 
 Route::get('/', 'HomeController@showWelcome');
 
+Route::get('home', 'HomeController@showHome');
+
 Route::get('resume', 'HomeController@showResume');
 
 Route::get('portfolio', 'HomeController@showPortfolio');
 
 Route::get('calculator', 'HomeController@showCalculator');
+
+Route::get('signup', 'HomeController@showSignup');
+
+Route::get('aboutUs', 'HomeController@showAboutUs');
 
 Route::get('form', array('as' => 'myform', function()
 {
@@ -41,10 +47,20 @@ Route::post('form', function()
 	}
 });
 
-Route::get('orm-test', function ()
+Route::get('orm-test', function()
 {
 	$post = Post::find(1);
 	$post->delete();
 });
+
+Route::get('login', 'HomeController@showLogin');
+
+Route::post('login', 'HomeController@doLogin');
+
+Route::get('logout', 'HomeController@doLogout');
+/*{
+	return 'logout.blade.php';
+
+});*/
 
 ?>

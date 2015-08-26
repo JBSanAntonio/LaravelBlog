@@ -2,9 +2,10 @@
 
 <title>Post Create Form</title>
 
-<h1>Create Post</h1>
 
 @section('content')
+
+<h1>Create Post <em>(must be logged in to post)</em></h1>
 
 {{-- uses token control option below to prevent Cross Site Request Forgery (CSRF) attacks --}}
 
@@ -24,6 +25,7 @@
 </div>
 	
 {{ Form::close() }}
+
 @stop
 
 
