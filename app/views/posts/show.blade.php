@@ -13,6 +13,16 @@
 		<tr><th><h2>Post Content: </h2></th><td><h4>{{{ $post->body}}}</h4></td></tr>
 		<tr><th><h2>Post Created: </h2></td><td><h4>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h4></td></tr>
 	</table>
+
+	{{-- TO DO!!! add conditional, if images then go to foreach; otherwise show post without images - can solve in view or controller --}}
+
+<? dd($images)?>
+
+	@foreach($images as $image)
+	<img src="{{ $image->url }}">
+
+	@endforeach
+
 </div>
 
 <div "col-md-6">

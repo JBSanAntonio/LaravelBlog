@@ -63,4 +63,15 @@ Route::get('logout', 'HomeController@doLogout');
 
 });*/
 
+/* Check if image was uploaded or not*/
+/* find out the file and move it onto uploads directory of our server keeping name uploaded with*/
+
+/*Route::post('/upload', function(){
+	if (Input::hasFile('image'))
+	{
+	    $file = Input::file('image');
+	    $file->move('uploads', $file->getClientOriginalName());
+	}
+});*/
+
 ?>

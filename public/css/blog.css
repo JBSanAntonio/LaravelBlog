@@ -1,3 +1,44 @@
+.image { 
+	position: relative; 
+	width: 100%;
+}
+
+.headerTitle { 
+	position: absolute; 
+	top: 25px; 
+	left: -100px;
+	font-size: 4em;
+	font-style: bold;
+}
+.headerTagline {
+	font-size: 2em;
+	position: absolute; 
+	top: 120px; 
+	left: -100px;
+	width: 100%; 
+	font-size: 4em;
+	font-style: bold;
+}
+h1 span, h5 span { 
+   color: white; 
+   font: bold 24px/45px; 
+   letter-spacing: -1px; 
+   background-color: #333;
+   opacity: 0.8; 
+   /*background: rgb(0, 0, 0);  fallback color 
+   background: rgba(0, 0, 0, 0.7);*/
+   padding: 10px; 
+}
+
+h5 span { 
+   color: white; 
+   font: bold 24px/45px; 
+   letter-spacing: -1px; 
+   background-color: #456770;
+   opacity: 0.8; 
+   padding: 10px; 
+}
+
 body {
 
 	font-family: 'Poiret One', cursive, Book Antiqua, "Helvetica Neue", sans-serif;
@@ -7,15 +48,6 @@ h1, h5  {
 }
 .header {
 
-}
-.headerTitle {
-	font-size: 4em;
-	font-style: bold;
-	
-}
-.headerTagline {
-	font-size: 2em;
-	
 }
 .navbar {
 	width: 100%;

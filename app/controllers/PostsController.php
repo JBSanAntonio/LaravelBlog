@@ -88,13 +88,44 @@ class PostsController extends \BaseController {
 			$post = new Post();
 			$post->title=Input::get('title');
 			$post->body=Input::get('body');
+
 			/*need to add Auth::id() for create post to work*/
 			$post->user_id = Auth::id();
+			
 			$post->save();
+			
+			if(Input::hasFile('image')) {
+				$image = new Image();
+				/*lines 96 through 113 added to control image upload*/
+				// Get the uploaded file object
+				$file = Input::file('image');
+				$image->post_id=$post->id;
+
+				if(Input::has('image_title')) {
+					$image->image_title=Input::get('image_title');
+				} else {
+					$image->getClientOriginalName();
+				}
+
+				// Generate the necessary file details
+				$extension = pathinfo($file->getClientOriginalName(), PATHINFO_EXTENSION);
+				$filename = $file->getClientOriginalName();
+				$path = 'img/posts/';
+
+				// Move the uploaded image to the specified path
+				// using the generated specified filename
+				
+				$image->url=$file->move($path, $filename);
+
+				$image->save();	
+			}
+
+			
+
+
 
 		return Redirect::action('PostsController@index');
 	}
-
 
 	/**
 	 * Display the specified resource.
@@ -123,6 +154,8 @@ class PostsController extends \BaseController {
 			App::abort(404);
 		}
 
+		$images = Image::where('post_id', $post->id);
+
 		// get the user's posts
 		$user = $post->user;
 
@@ -137,7 +170,7 @@ class PostsController extends \BaseController {
 			// retrieve flash data (same as any other session variable)
 			$value = Session::get('key');
 
-		return View::make('posts.show')->with('post', $post);
+		return View::make('posts.show')->with('post', $post)->with('images', $images);
 		/*return 'This page shows a specific post by id number';*/
 	}
 
