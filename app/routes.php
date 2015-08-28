@@ -12,7 +12,7 @@
 */
 Route::resource('posts', 'PostsController');
 
-Route::get('/', 'HomeController@showWelcome');
+Route::get('/', 'HomeController@showHome');
 
 Route::get('home', 'HomeController@showHome');
 
