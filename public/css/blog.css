@@ -76,6 +76,30 @@ nav a.active {
 .footer {
 	text-align: center;
 }
+.introLine1 {
+	padding: .75em;
+	text-align: center;
+	font-style: bold;
+	font-size: 3em;
+	color:  #456770;
+}
+.introLine2 {
+	padding: .5em;
+	text-align: center;
+	font-style: bold;
+	font-size: 3em;
+	color:  #456770;
+}
+.homebullets {
+	padding: 1em;
+	margin: 2em 0 0 7em;
+}
+.homeBonVoyage {
+	color:  #456770;
+	font-style: bold;
+	text-align: center;
+	font-size: 5em;
+}
 
 
 /*h1 {

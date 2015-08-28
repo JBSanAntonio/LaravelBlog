@@ -16,17 +16,40 @@
 
 @section('content')
 
-	<p></p>
-	<h2 class = "intro">
-	Do you long to getaway but can't spare the time or money? 
-
-	Vagabondtrip.com is your short-term solution. Visit to escape the mundane. View exotic and exciting destinations near and far. 
-
-	No need to struggle with airports and transfers. No need to incur a large balance on your card.  Vagabondtrip takes you where you have been dreaming of going without worry, stress, or cost.
-
-	Relax, browse, and ejoy your virtual trip, or share your own travel experience with others. All you need is a Vagabondtrip Passport to start posting.
-
-	Bon Voyage! 
+	
+	<h2 class = "introLine1">		
+		Longing to getaway but can't spare the time or money?
 	</h2>
+	<h2 class = "introLine2">
+		Vagabondtrip.com is your short-term solution. 
+	</h2>
+
+<hr>
+<h3>
+<ul>
+	<li class = "homeBullets">
+		Visit to escape the mundane. View exotic and exciting destinations near and far. 
+	</li>
+
+	<hr>
+
+	<li class = "homeBullets">
+		Getaway without worry, stress, or cost.  Relax, browse, and enjoy your virtual trip.<br>
+		No need to struggle with airports and transfers or max out your credit card.  
+	</li>
+
+	<hr>
+
+	<li class = "homeBullets">
+		 Share your own travel experience with others. <br>All you need is a Vagabondtrip Passport to start posting, so signup now.
+	</li>
+</ul>
+</h3>
+
+<hr>
+	<h3 class = "homeBonVoyage">
+	Bon Voyage! 
+	</h3>
+	
 
 @stop
