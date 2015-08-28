@@ -5,7 +5,7 @@
 @section('content')
 
 <div>
-	<table>
+	<table class = "table">
 		<th><h1>Selected Post</h1></th>
 		{{-- <tr><th><h1>Post Number: </h1></th><td><h4>{{$post->id}}</td></h4></tr> --}}
 		<tr><th><h2>Post Title: </h2></th><td><h4>{{{$post->title}}}</h4></td></tr>
