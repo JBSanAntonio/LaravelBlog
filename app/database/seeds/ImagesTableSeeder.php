@@ -1,6 +1,6 @@
 <?php
-	
-use Faker\factory as Faker;
+
+use Faker\Factory as Faker;
 
 class ImagesTableSeeder extends Seeder {
 

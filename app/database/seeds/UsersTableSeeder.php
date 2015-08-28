@@ -1,6 +1,6 @@
 <?php
 
-use Faker\factory as Faker;
+use Faker\Factory as Faker;
 
 
 class UsersTableSeeder extends Seeder {
@@ -17,6 +17,7 @@ class UsersTableSeeder extends Seeder {
 	public function createEnvUser()
 	{
 		$user = new User();
+		/*$user->username = $_ENV['USERNAME'];*/
 		$user->first_name = $_ENV['USER_FIRST_NAME'];
 		$user->last_name = $_ENV['USER_LAST_NAME'];
 		$user->email = $_ENV['USER_EMAIL'];
