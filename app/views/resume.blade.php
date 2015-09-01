@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.resume-portfolio-master')
 
 @section('title')
     <title>Resume</title>
@@ -13,9 +13,9 @@
 
 	<div row class="container-fluid row nameAddress">
 
-		<div class = "col-md-2 logo"><img src="img/logo.png"/></div>
+		<div class = "col-md-3 logo"><img src="img/logo.png"/></div>
     		
-    	<div class = "col-md-10 address"><h1>Julie Buser</h1><p></p>107 Longsford, San Antonio, Texas 78209<p></p>(210) 240-8265<p></p>jbuser2013@gmail.com</div>
+    	<div class = "col-md-8 address"><h1>Julie Buser</h1><p></p>107 Longsford, San Antonio, Texas 78209<p></p>(210) 240-8265<p></p>jbuser2013@gmail.com</div>
     </div>
     
 
@@ -33,10 +33,10 @@
 				</div>
 				<div class = "col-md-6">
 					<ul>
-				    <li>HTML5 | CSS | Resume created with HTML5, CSS and Laravel
+				    <li>HTML5 | CSS | SASS | AngularJS
 				    	</li>
 				    <p></p>
-				    <li>Wordpress | Adobe Creative Cloud | Adobe Used for Resume Logo</li>
+				    <li>Wordpress | Adobe Creative Cloud | Logo in Photoshop</li>
 				    <p></p>
 				    <li>Google Analytics | Salesforce |  Microsoft Office Suite</li>
 					</ul>
@@ -50,7 +50,7 @@
 VIEW MY 
 <a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a>
 </h5>
-			<ul><em><a link href = "https://github.com/JBSanAntonio">Link to coding projects on Github</em></a></ul>
+			<ul><a link href = "https://github.com/JBSanAntonio">Coding Projects on Github Under JBSanAntonio</a></ul>
 		<p></p>
 	</section>
 
@@ -58,24 +58,31 @@ VIEW MY
 	<div row>
 		<div class = "col-md-6">
 		<dl class="dl-horizontal">
+		  <dt>CMS Blogsite:</dt>
+		  <dd>Model-view-controller (MVC) project using Laravel, PHP, MySQL, HTML, and CSS | <a href="{{action("HomeController@showHome") }}">Demo Vagabondtrip.com Travel Blog</a></dd>
+		  <p></p>
 		  <dt>MVC Website:</dt>
-		  <dd>Model-view-controller (MVC) team project using PHP, MySQL, HTML, CSS, and Github version control | <em><a href = "http://wineseller.dev">Homepage for Wineseller Website</em></a></dd>
+		  <dd>Model-view-controller (MVC) team project using PHP, MySQL, HTML, CSS, and Github version control | <em><a href="{{action("HomeController@showWineseller") }}">Homepage for Wineseller Website</em></a></dd>
 		  <p></p>
 		  <dt>Calculator:</dt>
-		  <dd>Online calculator programmed using Javascript and styled with HTML5 and CSS |
-		  <em><a href = "http://codeup.dev/JavaScriptCalculator.html">Demo JavaScript calculator online</em></a></dd>
+		  <dd>Online calculator programmed in Javascript and styled after Mac calculator using HTML5 and CSS |
+		 <a href="{{action("HomeController@showCalculator") }}">Demo JavaScript Calculator</a>
 		</div>
 
 		<div class = "col-md-6">
 		<dl class="dl-horizontal">
  		  <dt>Wordpress Sites:</dt>
 		  <dd><a href="http://venueandvine.com">Personal Wine Blog</a></dd>
-		  <dd><a href = "http://belenasalon.wordpress.com">Hair Salon Shop Site<em> (client site)</em></a></dd>
-		  <dd><a href = "http://trendoutlook.com">Trends Site<em> (in development)</em></a></dd>
-		</dl>	
-		  <dt>Web Games:</dt>
+		  <dd><a href = "http://belenasalon.wordpress.com">Client Site<em> (in development)</em></a></dd>
+		  <dd><a href = "http://trendlookout.com">Trends Site<em> (in development)</em></a></dd>
+		<p></p>
+		<dt>API Ajax Project</dt>
+		  <dd>OpenWeatherMap & GoogleMaps API Project:
+		  <a href="{{action("HomeController@showWeatherAPI") }}">San Antonio Weather</a></dd>
+		  <p></p>
+		<dt>Web Games:</dt>
 		  <dd>Simple Simon game and Whack-a-mole variant using HTML, CSS, Javascript, and JQuery
-		  <em><a href = "http://simplesimon.dev/simple.html">Demo Simple Simon online</em></a> |
+		  <em><a href="{{action("HomeController@showSimon") }}"></em>Demo Simple Simon Game</a> |
 		  <a href = "https://github.com/JBSanAntonio/SimpleSimon.dev/blob/master/public/simple.html"><em>Simple Simon .html file on Github</em></a> |
 		  <em><a href = "https://github.com/JBSanAntonio/SimpleSimon.dev/blob/master/public/simple.css">Simple Simon .css file on Github</em></a></dd>
 		  <p></p>
@@ -90,7 +97,7 @@ VIEW MY
 			<ul class = "education">
 				<li>June 2015 - present, Codeup Full Stack Web Development Bootcamp, San Antonio, TX</li>
 				<li><em>(In Progress)</em> MBA, Texas A&M San Antonio, San Antonio, TX</li>
-				<li>JD	University of Maryland School of Law, Baltimore, MD</li>
+				<li>JD,	University of Maryland School of Law, Baltimore, MD</li>
 				<li>MA, Political Science, University of Michigan, Ann Arbor, MI</li>
 				<li>BA, Russian and East European Studies, University of Michigan, Ann Arbor, MI</li>
 			</ul>	
@@ -141,9 +148,9 @@ VIEW MY
 				<li>2009-April 2014	| Strategic Marketing VP/SVP; VP Business Development, InGenesis, San Antonio, TX</li>
 				<li>2007-2008 |	Proposal Director/Writer, InGenesis, San Antonio, TX</li>
 				<li>1997-2006 |	Freelance Writer, School Volunteer,	Waco, TX and San Antonio, TX</li>
-				<li>1994-1996 |	Lexis/Nexis Information Consultant, Reed Elsevier, Miamisburg, OH</li>
-				<li>1992-1994 |	Lexis/Nexis Business Information Specialist,	Mead Data Central, Miamisburg, OH</li>
-				<li>1990-1991 |	US Army Judge Advocate General Intern,	Walter Reed Army Medical Center, DC and Army Claims Service, Ft. Meade, MD</li>
+				<li>1994-96 |	Lexis/Nexis Information Consultant, Reed Elsevier, Miamisburg, OH</li>
+				<li>1992-94 |	Lexis/Nexis Business Information Specialist,	Mead Data Central, Miamisburg, OH</li>
+				<li>1990-91 |	US Army Judge Advocate General Intern,	Walter Reed Army Medical Center, DC and Army Claims Service, Ft. Meade, MD</li>
 				<li>1989 |	International Security Policy Analyst, 	Office of the Secretary of Defense, Pentagon, DC</li>
 				<li>1988 |	Survey Research Assistant,	Survey Research Center, University of MI, Ann Arbor, MI</li>
 			</ul>
@@ -156,7 +163,7 @@ VIEW MY
 				<li>Senior Professional in Human Resources (SPHR)</li> 
 				<li>Top 10 US College Woman Award | Harry S. Truman Scholarships (Julie Ann Wyoral)</li>
 				<li>Circumnavigator Club Foundation Grantee - traveled to Somalia, Pakistan, Thailand, Hong Kong, and the Philippines to study the world refugee situation</li>
-				<li>European Cultural History Program; travel-study in USSR, Mideast and Europe</li>
+				<li>European Cultural History Program; travel-study in USSR, Middle East, and Europe</li>
 			</ul>
 	</div>
 

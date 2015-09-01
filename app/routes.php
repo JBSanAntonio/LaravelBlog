@@ -16,11 +16,19 @@ Route::get('/', 'HomeController@showHome');
 
 Route::get('home', 'HomeController@showHome');
 
+Route::get('resportfHome', 'HomeController@showResportfHome');
+
 Route::get('resume', 'HomeController@showResume');
 
 Route::get('portfolio', 'HomeController@showPortfolio');
 
 Route::get('calculator', 'HomeController@showCalculator');
+
+Route::get('simon', 'HomeController@showSimon');
+
+Route::get('wineseller', 'HomeController@showWineseller');
+
+Route::get('weatherAPI', 'HomeController@showWeatherAPI');
 
 Route::get('signup', 'HomeController@showSignup');
 

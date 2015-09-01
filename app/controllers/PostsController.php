@@ -120,9 +120,6 @@ class PostsController extends \BaseController {
 				$image->save();	
 			}
 
-			
-
-
 
 		return Redirect::action('PostsController@index');
 	}
@@ -154,23 +151,14 @@ class PostsController extends \BaseController {
 			App::abort(404);
 		}
 
-		$images = Image::where('post_id', $post->id);
 
-		// get the user's posts
-		$user = $post->user;
-
-		$data = array(
-				'post' => $post,
-				'user' => $user
-				);
-		//
 		 	// set flash data
 			Session::flash('successMessage', 'Your post was successfully found.');
 
 			// retrieve flash data (same as any other session variable)
 			$value = Session::get('key');
 
-		return View::make('posts.show')->with('post', $post)->with('images', $images);
+		return View::make('posts.show')->with('post', $post);
 		/*return 'This page shows a specific post by id number';*/
 	}
 

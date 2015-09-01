@@ -16,11 +16,9 @@
 
 	{{-- TO DO!!! add conditional, if images then go to foreach; otherwise show post without images - can solve in view or controller --}}
 
-<? dd($images)?>
 
-	@foreach($images as $image)
-	<img src="{{ $image->url }}">
-
+	@foreach($post->images as $image)
+		<img class = "postImage" src="{{ '/' . $image->url }}">
 	@endforeach
 
 </div>

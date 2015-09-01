@@ -13,6 +13,7 @@
 {{-- $posts = DB::table('posts')
                 ->orderBy('created_at', 'desc')
                 ->get(); --}}
+        
 
 	@foreach($posts as $post)
 	<h3><strong>Post Title: {{{$post->title}}}</strong></h3>
@@ -27,6 +28,17 @@
 
 	<a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>
 	@endforeach
+
+@stop
+
+{{-- http://stackoverflow.com/questions/28051899/undefined-variable-image-laravel CODE FOR IMAGES ON VIEW PAGE --}}
+
+{{-- <ul>
+    @foreach($image as $images)
+      <li>{{$images->image_name}}</li>
+    @endforeach
+</ul> --}}
+
 
 @stop
 

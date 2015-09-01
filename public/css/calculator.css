@@ -61,11 +61,9 @@ button {
 
 #buttonClear {
   background-color: #817570;
+  border-bottom-radius: 5px;
 }
-#buttonDivide {
-  border-bottom-right-radius: 5px;
-}
-#buttonClear {
+#button0 {
   border-bottom-left-radius: 5px;
 }
 #leftOperand {

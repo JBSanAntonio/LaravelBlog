@@ -2,8 +2,8 @@
 <html>
 <head>
     <title></title>
-   {{--  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/css/calculator.css"> --}}
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/calculator.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
         </div>
 
         <div id = "value">
-            </div>    
+        </div>    
 
         <div id = "inputs" class="section group">
             <div>
@@ -30,6 +30,7 @@
                 <button class = "numbers col span_2_of_4" id="button6" value="6">6</button>
                 <button class = "operators col span_2_of_4" id="buttonMultiply" value="*">*</button>
             </div>
+            <div>
                 <button class = "numbers col span_3_of_4" id="button1" value="1">1</button>
                 <button class = "numbers col span_3_of_4" id="button2" value="2">2</button>
                 <button class = "numbers col span_3_of_4" id="button3" value="3">3</button>
@@ -42,7 +43,6 @@
                 <button class = "operators col span_1_of_4" id="buttonPlus" value="+">+</button>
             </div>
                 
-            </div>
         </div>
     </div>
 
@@ -62,16 +62,15 @@
         function numberClick () {
             if (Operator.value == false) {
                 document.getElementById("leftOperand").value +=this.value;
-                console.log(this.value)
             } else {
                 return rightOperand.value +=this.value;
-                console.log(this.value)
             }
         } 
 
         function getOperator ()  {
             return Operator.value = this.value;
         }
+
 
         function equals ()  {
             var result;
@@ -83,7 +82,7 @@
                 result = parseInt(leftOperand.value) * parseInt(rightOperand.value);
             } else if (Operator.value == "/")  {
                 result = parseInt(leftOperand.value) / parseInt(rightOperand.value);
-            } else if 
+            } 
             leftOperand.value = result;  
             Operator.value = "";
             rightOperand.value = "";

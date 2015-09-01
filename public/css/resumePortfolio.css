@@ -16,9 +16,10 @@ body {
 }
 .nameAddress {
 	margin-bottom: 1em;
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 }
 .address {
+	margin-left: 0.5em;
 	line-height: 1em;
 	font-size: 1.25em;
 }
@@ -37,7 +38,7 @@ body {
 	text-align: left;
 }
 .webDevProjects {
-
+	
 }
 .sampleProjects {
 	text-align: left;
@@ -49,6 +50,12 @@ ul {
 h1 {
 	text-align: left;
 	font-weight: bold;
+	color: #12129E;
+}
+#container a {
+	color: #12129E;
+}
+.webDevProjects a {
 	color: #12129E;
 }
 h2 {
@@ -67,4 +74,12 @@ h5 {
 .p2Header {
 	margin: 6em 2em 1em 1em;
 	text-align: right;
+}
+footer a{
+	color: #12129E;
+	font-style: bold;
+}
+.footerText{
+	text-align: center;
+	font-size: 1.25em;
 }

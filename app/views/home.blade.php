@@ -18,13 +18,19 @@
 
 	
 	<h2 class = "introLine1">		
-		Longing to getaway but can't spare the time or money?
+		Share your own travel experiences with others
+	</h2>
+	<h2 class = "OR">
+		<p></p>
+		OR
+		<p></p>
 	</h2>
 	<h2 class = "introLine2">
-		Vagabondtrip.com is your short-term solution. 
+		Getaway without worry, cost, or stress
 	</h2>
 
 <hr>
+
 <h3>
 <ul>
 	<li class = "homeBullets">
@@ -34,14 +40,8 @@
 	<hr>
 
 	<li class = "homeBullets">
-		Getaway without worry, stress, or cost.  Relax, browse, and enjoy your virtual trip.<br>
-		No need to struggle with airports and transfers or max out your credit card.  
-	</li>
-
-	<hr>
-
-	<li class = "homeBullets">
-		 Share your own travel experience with others. <br>All you need is a Vagabondtrip Passport to start posting, so signup now.
+		Signup now to start posting about your trip.
+		{{-- No need to struggle with airports and transfers or max out your credit card.  --}}
 	</li>
 </ul>
 </h3>

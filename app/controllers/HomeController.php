@@ -23,6 +23,10 @@ class HomeController extends BaseController {
 	{
 		return View::make('home');
 	}
+	public function showResportfHome()
+	{
+		return View::make('resportf-Home');
+	}
 
 	public function showResume()
 	{
@@ -37,6 +41,21 @@ class HomeController extends BaseController {
 	public function showCalculator()
 	{
 		return View::make('calculator');
+	}
+
+	public function showSimon()
+	{
+		return View::make('simon');
+	}
+
+	public function showWineseller()
+	{
+		return View::make('wineseller');
+	}
+
+	public function showWeatherAPI()
+	{
+		return View::make('weatherAPI');
 	}
 
 	public function showSignup()
