@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="form-group tags" @if($errors->has('tags')) has-error @endif"><strong>Tags: </strong>
-			<input name="tags" id="tags" class="tags" value="">
+			<input name="tag_list" id="tags" class="tags" value="">
 		</div>
 
 {{-- TAGS EXAMPLE FROM jQUERY PLUGIN  --}}

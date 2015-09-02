@@ -1,17 +1,17 @@
 {{-- Navigation --}}
 
-<div class="container">
-   <div class="row col-md-12">
-        <nav class="nav collapse navbar-collapse navbar navbar-default container-fluid" role="navigation" id="bs-example-navbar-collapse-1">
+{{-- CHECK FOR MISSING CLASSES IN BOOTSTRAP <div class="container"> --}}
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-             <ul>
-                <li class="active"><a href="{{action("HomeController@showHome") }}">Home</a></li>
-                <li><a href="signup">Sign Up</a></li>
-                <li class="active"><a href="{{action("PostsController@index") }}">All Posts</a></li>
-                <li><a href="{{action("PostsController@create") }}">Add Post</a></li>
-                <li><a href="{{action("HomeController@showAboutUs") }}">About</a></li>
-            </ul>
+    <nav class="nav collapse navbar-collapse navbar navbar-default container-fluid" role="navigation" id="bs-example-navbar-collapse-1">
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+           <ul>
+              <li class="active"><a href="{{action("HomeController@showHome") }}">Home</a></li>
+              <li><a href="signup">Sign Up</a></li>
+              <li class="active"><a href="{{action("PostsController@index") }}">All Posts</a></li>
+              <li><a href="{{action("PostsController@create") }}">Add Post</a></li>
+              <li><a href="{{action("HomeController@showAboutUs") }}">About</a></li>
+          </ul>
 
 {{-- Search form --}}
 
@@ -32,8 +32,8 @@
                 
               <li class="dropdown">
 
-         <a href="{{ url('login') }}" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
-             <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                   <a href="{{ url('login') }}" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
+                       <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
 
                       <li>
                          <div class="row">
@@ -62,18 +62,11 @@
                       </li>
               </ul>
               @endif
-
-                      {{-- <li class="divider"></li>
-                      <li>
-                         <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
-                         <input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter">
-                      </li> --}}
              
           </div>
             <!-- /.navbar-collapse -->
         </nav>
-    </div>
-</div>
+{{-- </div> --}}
 
  {{-- <li class="dropdown">
                    <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>

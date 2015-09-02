@@ -24,7 +24,11 @@
 
 	<h5>Post Content: {{{Str::words($post->body, 20) }}}</h5>
 
-	<h5>Post Tags: {{{Str::words($post->tags, 200) }}}</h5>
+	<h5>Post Tags: </h5>
+
+	@foreach($post->tags as $tag)
+		{{{ $tag->name }}}
+	@endforeach
 
 	{{-- <h5>Post Image: {{{Str::words($post->image, 20) }}}</h5> --}}
 
