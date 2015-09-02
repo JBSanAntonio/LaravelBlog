@@ -2,75 +2,109 @@
 <html>
 <head>
 	<title>Weather API Example</title>
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<style type="text/css">
 
-	#map-canvas {
-		height: 300px;
-		width: 100%;
-	}
-	.container-fluid {
+	body {	
 		background-color: #87CEFA;
-		height: 400px;
+	}
+	#map-canvas {
+		height: 600px;
+		width: 100%;
 	}
 	.button {
 		background-color: #191970;
 		border: 3px solid darkgrey;
 		border-style: groove;
 	}
-	.entryBox {
-		background-color: #FFF;
-		height: 29px;
-		width: 150px;
-	}
 	.column {
 		background-color: white;
-		border: 3px solid darkgrey;
-		border-style: groove;
+		border: 3px groove darkgrey;
+		text-align: center;
 	}
 	.row {
 		text-align: center;
-		padding: 20px;
+		padding: 2px;
 		box-shadow: inset;
 	}
 	.topHeading {
-		text-indent: 10px;
+		text-indent: 1em;
+		font-size: 5em;
 	}
 	.subHeading {
-		text-indent: 1em;
+		text-indent: 1.5em;
+		font-size: 4em;
+	}
+	#lat, #lng {
+		height: 2em;
+		background-color: #FFF;
+		color: #000;
+	}
+	.weather {
+		font-size: 2em;
+		margin: 2em 0 2em 0;		
+	}
+	.latLng {
+		margin: 1em;
+	}
+	#address {
+		height: 2em;
+		width: 15em;
+	}
+	#updateLocation {
+		margin: 1em;
 	}
 	</style>
 </head>
 <body>
 
-	<main class = "container-fluid">
 		<h1 class = "topHeading">Weather Report</h1>
 		<h2 class = "subHeading">San Antonio, Texas</h2>
-			<br>
+		<p></p>
 
-    <div class="row">
+    <div row class = "weather col-sm-12">
     	<p></p>
-        <div class="col-md-4 column One" id="day0Forecast"><strong>Today</strong></div>
+        <div class="col-sm-4 column One" id="day0Forecast"><strong>Today</strong></div>
         <p></p>
-		<div class="col-md-4 column Two" id="day1Forecast"><strong>Tomorrow</strong></div>
+		<div class="col-sm-4 column Two" id="day1Forecast"><strong>Tomorrow</strong></div>
 		<p></p>
-		<div class="col-md-4 column Three" id="day2Forecast"><strong>Day After Tomorrow</strong></div>
+		<div class="col-sm-4 column Three" id="day2Forecast"><strong>Day After Tomorrow</strong></div>
 		<p></p>
 	</div>
 
-    </main> 
-    <div class = "col-md-10">
-    	<div class = "col-md-5">
-    		<input id="lat" type="text" placeholder="Enter Latitude"></input>
-    	</div>
-    	<div class = "col-md-5">
-    		<input id="lng" type="text" placeholder="Enter Longitude"></input>
+ {{-- <div row class = "weather col-sm-12">
+		<h4 class = "latLng">Enter Latitude and Longitude or a Location or Drag Pin to View Weather in Another Location</h4>
+		<p></p>
+	<div class = "col-sm-6 latLng">
+	    	<div class = "col-sm-3">
+	    		<input id="lat" type="text" placeholder="Enter Latitude"></input>
+	    	</div>
+	    	<div class = "col-sm-3">
+	    		<input id="lng" type="text" placeholder="Enter Longitude"></input>
+	    	<button id="update" class = "btn btn-lrg">Update Location</button>
+			</div>
+	    
+	<div class = "col-sm-6" id="updateLocation">
+		<div class = "col-sm-3">
 		</div>
+		<div class = "col-sm-3">
+  		<input id="address" type="text" placeholder="Drag pin or type location"></input>
+  			<button id="update" class = "btn btn-lrg">Update Location</button>
+  		</div>
+  	</div>
 	</div>
-    <div class ="container-fluid col-md-12">  
-			<!-- div to hold map -->
-		 	<div id="map-canvas"></div>
-	</div>   
+  </div> --}}
+
+	<div class = "map">
+	<div class = "container-fluid">
+		<div class = "col-sm-12">
+		<!-- div to hold map -->
+	 	<div id="map-canvas"></div>
+ 	</div>
+
+	</div>
+	
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -131,18 +165,18 @@
         // Render the map
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 	// Add a new pushpin marker to our existing map
-		    /*var image = 'img/pushpin.png';
+		    var image = 'img/pushpin.jpg';
 		    var marker = new google.maps.Marker({
 			    position: mapOptions.center,
 			    map: map,
 			    icon: image,
 			    draggable: true,
 				animation: google.maps.Animation.DROP
-		    });*/
+		    });
 		    //Re-center the map around the marker when window is resized
-			/*google.maps.event.addDomListener(window, 'resize', function() {
+			google.maps.event.addDomListener(window, 'resize', function() {
 			  map.setCenter(marker.getPosition());
-			});*/
+			});
 			//Get longitude and latitude of marker when it's dragged
 			/*google.maps.event.addListener(marker, 'dragend', function(event){
 			  	console.log(this.getPosition());

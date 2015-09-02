@@ -3,6 +3,11 @@
 	<title>Resume Portfolio Home Page</title>
 </head>
 
+@section('content')
+
+	<p class = "portfolioCover">The HOME PAGE</p>
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -13,11 +18,4 @@
   ga('send', 'pageview');
 
 </script>
-
-@section('content')
-	
-	<h2 class = "introLine1">		
-		Julie_Buser  Web_Developer
-	</h2>
-
 @stop

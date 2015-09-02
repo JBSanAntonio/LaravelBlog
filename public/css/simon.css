@@ -2,17 +2,17 @@ body {
 	background-color: #222;
 }
 #container {
-	margin-left: 50px;
 	margin-top: 10px;
 }
 .gamePad {
 	width: 640px;
 	height: 640px;
 	border-radius: 640px;
-	border: 5 px solid black;
 	background-color: #000;
 	margin: auto;
-
+	position: relative;
+	display: inline-block;
+	line-height: 0;
 }
 
 .square {
@@ -48,7 +48,8 @@ body {
 #startButton {
 	position: absolute;
 	top: 50px;
-	right: 48px;
+	right: 50px;
+	vertical-align: center;
 	text-align: center;
 	border-radius: 100px;
 	height: 100px;
@@ -60,19 +61,23 @@ body {
 }
 .circle {
     font-family: helvetica, verdana, sans-serif;
-    position: absolute;
+    position: relative;
+    float: left;
+    text-align: center;
+    vertical-align: center;
+    margin: 0;
     top: 225px;
-    left: 488px;
+    left: 420px;
     width: 200px;
     height: 200px;
     background: #000;
     border-radius: 200px;
+    display: inline-block;
     z-index: 10;
   }
 #level {
-	position: absolute;
-	top: 7px;
-	right: 65px;
+	position: relative;
+	vertical-align: top;
 	color: #fff;
 	font-size: 20px;
   }

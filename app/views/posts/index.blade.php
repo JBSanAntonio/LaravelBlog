@@ -29,6 +29,11 @@
 	<a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>
 	@endforeach
 
+
+	{{-- TO DO: ADD TAGS TO INDEX PAGE --}}
+
+	
+
 @stop
 
 {{-- http://stackoverflow.com/questions/28051899/undefined-variable-image-laravel CODE FOR IMAGES ON VIEW PAGE --}}
@@ -39,8 +44,6 @@
     @endforeach
 </ul> --}}
 
-
-@stop
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

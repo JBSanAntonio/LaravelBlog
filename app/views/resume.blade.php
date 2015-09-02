@@ -47,8 +47,8 @@
 	<section class="webDevProjects">
 		<h2>Web Development Projects</h2>
 		<h5>
-VIEW MY 
-<a href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a>
+View The
+<a href="{{{ action('HomeController@showPortfolio') }}}">PORTFOLIO</a>
 </h5>
 			<ul><a link href = "https://github.com/JBSanAntonio">Coding Projects on Github Under JBSanAntonio</a></ul>
 		<p></p>
@@ -59,10 +59,10 @@ VIEW MY
 		<div class = "col-md-6">
 		<dl class="dl-horizontal">
 		  <dt>CMS Blogsite:</dt>
-		  <dd>Model-view-controller (MVC) project using Laravel, PHP, MySQL, HTML, and CSS | <a href="{{action("HomeController@showHome") }}">Demo Vagabondtrip.com Travel Blog</a></dd>
+		  <dd>Model-view-controller (MVC) project using Laravel, PHP, MySQL, JS, jQuery, HTML, and CSS | <a href="{{action("HomeController@showHome") }}">Demo Vagabondtrip.com Travel Blog</a></dd>
 		  <p></p>
 		  <dt>MVC Website:</dt>
-		  <dd>Model-view-controller (MVC) team project using PHP, MySQL, HTML, CSS, and Github version control | <em><a href="{{action("HomeController@showWineseller") }}">Homepage for Wineseller Website</em></a></dd>
+		  <dd>Model-view-controller (MVC) team project using PHP, MySQL, HTML, CSS, and Github version control | <a href="{{action("HomeController@showWineseller") }}">Homepage for Wineseller Website</a></dd>
 		  <p></p>
 		  <dt>Calculator:</dt>
 		  <dd>Online calculator programmed in Javascript and styled after Mac calculator using HTML5 and CSS |
@@ -82,7 +82,7 @@ VIEW MY
 		  <p></p>
 		<dt>Web Games:</dt>
 		  <dd>Simple Simon game and Whack-a-mole variant using HTML, CSS, Javascript, and JQuery
-		  <em><a href="{{action("HomeController@showSimon") }}"></em>Demo Simple Simon Game</a> |
+		  <a href="{{action("HomeController@showSimon") }}">Demo Simple Simon Game</a> |
 		  <a href = "https://github.com/JBSanAntonio/SimpleSimon.dev/blob/master/public/simple.html"><em>Simple Simon .html file on Github</em></a> |
 		  <em><a href = "https://github.com/JBSanAntonio/SimpleSimon.dev/blob/master/public/simple.css">Simple Simon .css file on Github</em></a></dd>
 		  <p></p>
@@ -161,7 +161,7 @@ VIEW MY
 			<ul>
 				<li>San Antonio Online Marketing Group Member</li>
 				<li>Senior Professional in Human Resources (SPHR)</li> 
-				<li>Top 10 US College Woman Award | Harry S. Truman Scholarships (Julie Ann Wyoral)</li>
+				<li>Top 10 US College Woman Award | Harry S. Truman Scholarship (Julie Ann Wyoral)</li>
 				<li>Circumnavigator Club Foundation Grantee - traveled to Somalia, Pakistan, Thailand, Hong Kong, and the Philippines to study the world refugee situation</li>
 				<li>European Cultural History Program; travel-study in USSR, Middle East, and Europe</li>
 			</ul>

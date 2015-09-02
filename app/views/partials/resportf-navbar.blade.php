@@ -17,8 +17,8 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
              <ul class="nav navbar-nav">
                 <li class="active"><a href="{{action("HomeController@showResportfHome") }}">Home</a></li>
-                <li class="active"><a href="{{action("HomeController@showResume") }}">Resume</a></li>
-                <li><a href="{{action("HomeController@showPortfolio") }}">Portfolio</a></li>
+                <li class="active"><a href="{{action("HomeController@showResume") }}">The RESUME</a></li>
+                <li><a href="{{action("HomeController@showPortfolio") }}">The PORTFOLIO</a></li>
 
                 {{-- <li class="dropdown">
                    <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>

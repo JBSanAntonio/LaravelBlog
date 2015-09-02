@@ -6,11 +6,12 @@
 
 @section('content')
 
-<h1>Portfolio Page</h1>
-<h2>
+
+<h1 class="portfolioCover">The PORTFOLIO</h1>
+{{-- <h2>
 VIEW MY 
 <a href="{{{ action('HomeController@showResume') }}}">Resume</a>
-</h2>
+</h2> --}}
 
     <script src="http://code.createjs.com/preloadjs-0.3.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>

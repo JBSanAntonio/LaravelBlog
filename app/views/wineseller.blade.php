@@ -23,7 +23,7 @@
   <div class = "header">
     <div row>
       <div class = "col-md-4">
-        <img class = "logoWineseller" src="img/logoWineseller.png">
+        <img class = "logoWineseller" src="/img/logoWineseller.png">
       </div>
 
       <div class = "col-md-8">

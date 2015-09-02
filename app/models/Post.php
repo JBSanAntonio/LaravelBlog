@@ -19,5 +19,10 @@ class Post extends Eloquent
 	    return $this->hasMany('Image');
 	}
 
+	public function tags()
+    {
+        return $this->belongsToMany('Tag');
+    }
+
 
 }

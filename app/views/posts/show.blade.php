@@ -4,29 +4,35 @@
 
 @section('content')
 
-<div>
-	<table class = "table">
-		<th><h1>Selected Post</h1></th>
-		{{-- <tr><th><h1>Post Number: </h1></th><td><h4>{{$post->id}}</td></h4></tr> --}}
-		<tr><th><h2>Post Title: </h2></th><td><h4>{{{$post->title}}}</h4></td></tr>
-		<tr><th><h2>User Name: </h2></th><td><h4>{{$post->user->first_name}} {{$post->user->last_name}}</h4></td></tr>
-		<tr><th><h2>Post Content: </h2></th><td><h4>{{{ $post->body}}}</h4></td></tr>
-		<tr><th><h2>Post Created: </h2></td><td><h4>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h4></td></tr>
-	</table>
+<div class = "container col-sm-12">
 
-	{{-- TO DO!!! add conditional, if images then go to foreach; otherwise show post without images - can solve in view or controller --}}
+	<div row>
+		<div class = "col-sm-5">
+	{{-- conditional, if images then go to foreach; otherwise show post without images --}}
+			@foreach($post->images as $image)
+				<img class = "postImage" src="{{ '/' . $image->url }}">
+			@endforeach
+		</div>
+
+		<div class = "col-sm-7">
+			{{-- <tr><th><h1>Post Number: </h1></th><td><h4>{{$post->id}}</td></h4></tr> --}}
+			<h3><strong>Post Title: </strong>{{{$post->title}}}</h3>
+			<h3><strong>User Name: </strong>{{$post->user->first_name}} {{$post->user->last_name}}</h3>
+			<h3><strong>Post Content: </strong><p></p><p>{{{ $post->body}}}</h3></p>
+			<h3><strong>Post Created: </strong>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h3>
+			{{-- <h2>Post Tags: </h2><h4>{{{$post->tags}}}</h4> --}}
+			<ul>
+				<h3><strong>Tags: </strong>
+					@foreach($post->tags as $tag)
+						<li>{{ $tag->name }}</li>
+					@endforeach
+				</h3>
+			</ul>
 
 
-	@foreach($post->images as $image)
-		<img class = "postImage" src="{{ '/' . $image->url }}">
-	@endforeach
-
-</div>
-
-<div "col-md-6">
 	{{-- <a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>
  --}}
-
+ 	<p></p>
 	<a href="{{{action('PostsController@edit',$post->id)}}}" class="btn btn-default">Edit Post<span class = "glyphicon glyphicon-pencil"></span></a>
 
 	<button id="delete" class="btn btn-danger">Delete Post<span class = "glyphicon glyphicon-trash"></span></button>
@@ -34,7 +40,9 @@
 	{{ Form::open(array('action' => array('PostsController@destroy', $post->id), 'method' => 'DELETE', 'id' => 'formDelete')) }}
 	{{ Form::close() }}
 
-</div>
+		</div>
+		</div>
+	</div>
 
 	<script type="text/javascript">
 		"use strict";

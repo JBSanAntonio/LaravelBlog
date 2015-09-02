@@ -47,15 +47,15 @@ ul {
 	font-size: 1em;
 }
 
-h1 {
-	text-align: left;
-	font-weight: bold;
-	color: #12129E;
-}
 #container a {
 	color: #12129E;
 }
 .webDevProjects a {
+	color: #12129E;
+}
+h1 {
+	text-align: left;
+	font-weight: bold;
 	color: #12129E;
 }
 h2 {
@@ -76,10 +76,33 @@ h5 {
 	text-align: right;
 }
 footer a{
-	color: #12129E;
+	/*color: #12129E;*/
+	color: #C2C2C2;
 	font-style: bold;
+	margin-bottom: -100px;
 }
 .footerText{
 	text-align: center;
 	font-size: 1.25em;
 }
+.portfolioCover { 
+	padding: 200px;
+    color: #EBEBEB;
+    font-size: 3em;
+    background-color: #FFF;
+    width: auto;
+    vertical-align: top;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+/*.portfolioCover {
+    color: #666;
+    background-color: #aaa;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5); /* 50% black coming from the top */
+
+/*.portfolioCover {
+	font-family: Bitter;
+	margin: 50px auto;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+	color: #333;
+}*/

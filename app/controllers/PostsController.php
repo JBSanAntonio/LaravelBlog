@@ -24,6 +24,9 @@ class PostsController extends \BaseController {
 		if (Input::has('search')) {
 			$query->where('title', 'like', '%'. $search . "%")
 				  ->orWhere('body', 'like', '%' . $search . "%")
+/*				  ->orWhereHas('tag', function($q) use ($name){
+				  	$q->where('name', 'like', '%' . $search . "%")
+				  }	*/	
 				  ->orWhereHas('user', function($q) use ($search){			
 					$q->where('first_name', 'like', '%' . $search . "%")
 					  ->orWhere('last_name', 'like', '%' . $search . "%");
@@ -227,6 +230,5 @@ class PostsController extends \BaseController {
 
 		return Redirect::action('PostsController@index');
 	}
-
 
 }

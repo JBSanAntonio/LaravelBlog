@@ -2,19 +2,11 @@
 
 <title>Post Create Form</title>
 
-
 @section('content')
 
 <h1>Create Post</h1>
 
 {{-- uses token control option below to prevent Cross Site Request Forgery (CSRF) attacks --}}
-
-{{-- FORMER CODE FOR FORM WITHOUT IMAGE BELOW...
-
-{{-- ANOTHER OPTION FOR CODING FORM WITH IMAGES
-{{ Form::open(array('url' => '/upload','files' => true, 'action' => 'PostsController@store')) }}
-{{ Form::open(array('url'=>'/images/save','role'=>'form','files'=> true, 'action' => 'PostsController@store')) }}
- --}}
 
 	{{ Form::open(array('action' => 'PostsController@store', 'files'=>true)) }}
 		<div class="form-group" @if($errors->has('title')) has-error @endif">
@@ -24,6 +16,25 @@
 			{{Form::label('body', 'Body') }}
 			{{Form::textarea('body') }}
 		</div>
+
+{{-- TAGS EXAMPLE FROM jQUERY PLUGIN  --}}
+<script>
+$(document).ready(function(){
+	$('#tags').tagsInput();
+	$('#tags').addTag('');
+});
+
+
+</script>
+
+		<div class="form-group tags" @if($errors->has('tags')) has-error @endif"><strong>Tags: </strong>
+			<input name="tags" id="tags" class="tags" value="">
+		</div>
+
+
+		{{--  name = "tags" id="tags" 
+			{{Form::label('name', 'Tags') }}
+			{{Form::text('name') }} --}}
 
 {{-- NEW code below for image in form --}}
 		<div class="form-group" @if($errors->has('image_title')) has-error @endif">

@@ -1,8 +1,16 @@
+.postImage {
+	max-width: 400px;
+	max-height: auto;
+}
+.showPost {
+	color: red;
+	border: 2px solid darkgrey;
+}
+
 .image { 
 	position: relative; 
 	width: 100%;
 }
-
 .headerTitle { 
 	position: absolute; 
 	top: 25px; 
@@ -19,7 +27,7 @@
 	font-size: 4em;
 	font-style: bold;
 }
-h1 span, h5 span { 
+h1 span { 
    color: white; 
    font: bold 24px/45px; 
    letter-spacing: -1px; 
@@ -118,10 +126,8 @@ footer a:hover {
       background-color: #005f5f;
       color: white;
     }
-.postImage {
-	max-width: 500px;
-	max-height: auto;
-}
+
+
 
 
 /*h1 {
