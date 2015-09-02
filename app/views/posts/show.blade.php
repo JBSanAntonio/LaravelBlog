@@ -20,14 +20,15 @@
 			<h3><strong>User Name: </strong>{{$post->user->first_name}} {{$post->user->last_name}}</h3>
 			<h3><strong>Post Content: </strong><p></p><p>{{{ $post->body}}}</h3></p>
 			<h3><strong>Post Created: </strong>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h3>
+			
 			{{-- <h2>Post Tags: </h2><h4>{{{$post->tags}}}</h4> --}}
-			<ul>
+			{{-- <ul>
 				<h3><strong>Tags: </strong>
 					@foreach($post->tags as $tag)
 						<li>{{ $tag->name }}</li>
 					@endforeach
 				</h3>
-			</ul>
+			</ul> --}}
 
 
 	{{-- <a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>

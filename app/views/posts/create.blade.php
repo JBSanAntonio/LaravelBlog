@@ -18,23 +18,16 @@
 		</div>
 
 {{-- TAGS EXAMPLE FROM jQUERY PLUGIN  --}}
-<script>
+{{-- below would be in script tags
+$('#tags').addTag('');
+
 $(document).ready(function(){
-	$('#tags').tagsInput();
-	$('#tags').addTag('');
-});
+	$('#tags').tagsInput(); --}}
 
-
-</script>
-
+{{-- 
 		<div class="form-group tags" @if($errors->has('tags')) has-error @endif"><strong>Tags: </strong>
 			<input name="tags" id="tags" class="tags" value="">
-		</div>
-
-
-		{{--  name = "tags" id="tags" 
-			{{Form::label('name', 'Tags') }}
-			{{Form::text('name') }} --}}
+		</div> --}}
 
 {{-- NEW code below for image in form --}}
 		<div class="form-group" @if($errors->has('image_title')) has-error @endif">

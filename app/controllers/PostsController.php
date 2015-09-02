@@ -89,13 +89,15 @@ class PostsController extends \BaseController {
 		
 	        // validation succeeded, create and save the post
 			$post = new Post();
-			$post->title=Input::get('title');
-			$post->body=Input::get('body');
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
 
 			/*need to add Auth::id() for create post to work*/
 			$post->user_id = Auth::id();
 			
 			$post->save();
+
+			$post->tag_list_Input::get('tag-list');
 			
 			if(Input::hasFile('image')) {
 				$image = new Image();
@@ -133,6 +135,19 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
+
+	public function setTagListAttribute($value) 
+	{
+		$tagIds = [];
+		$tags = explode (',', $value);
+		foreach ($tags as $tag => $value) {
+			$tag::firstOrCreate(arrary('name'=>$tagName));
+			$tagIds[] = $tag->id;
+			$this->tags()->sync($tagIds);
+		}
+	}
+
+
 	public function show($id)
 	{
 		// get the user with an id of 1

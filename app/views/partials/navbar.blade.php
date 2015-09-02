@@ -2,41 +2,17 @@
 
 <div class="container">
    <div class="row col-md-12">
-        <nav class="navbar navbar-default container-fluid" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             </button>
-           </div>
+        <nav class="nav collapse navbar-collapse navbar navbar-default container-fluid" role="navigation" id="bs-example-navbar-collapse-1">
 
           <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-             <ul class="nav navbar-nav">
+             <ul>
                 <li class="active"><a href="{{action("HomeController@showHome") }}">Home</a></li>
                 <li><a href="signup">Sign Up</a></li>
                 <li class="active"><a href="{{action("PostsController@index") }}">All Posts</a></li>
                 <li><a href="{{action("PostsController@create") }}">Add Post</a></li>
-                <li><a href="{{action("HomeController@showAboutUs") }}">About Us</a></li>
+                <li><a href="{{action("HomeController@showAboutUs") }}">About</a></li>
+            </ul>
 
-                {{-- <li class="dropdown">
-                   <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-                   <ul class="dropdown-menu">
-                      <li><a href="http://www.jquery2dotnet.com">Action</a></li>
-                      <li><a href="http://www.jquery2dotnet.com">Another action</a></li>
-                      <li><a href="http://www.jquery2dotnet.com">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="http://www.jquery2dotnet.com">Separated link</a></li>
-                      <li class="divider"></li>
-                      <li><a href="http://www.jquery2dotnet.com">One more separated link</a></li> --}}
-              </ul>
-               {{--  </li>
-             </ul> --}}
-
-               
 {{-- Search form --}}
 
            <form method="get" action="{{ action('PostsController@index') }}" class="navbar-form navbar-left" role="search">
@@ -46,7 +22,6 @@
               <button type="submit" class="btn btn-default">Submit</button>
            </form>
 
-
           <ul class="nav navbar-nav navbar-right">
               @if (Auth::check())
                 {{-- if logged in then log out; else go to login page --}}
@@ -55,7 +30,7 @@
                 @else
                     
                 
-              <li class="dropdown">
+             {{--  <li class="dropdown"> --}}
 
          <a href="{{ url('login') }}" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
              <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
@@ -100,6 +75,18 @@
     </div>
 </div>
 
+ {{-- <li class="dropdown">
+                   <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                      <li><a href="http://www.jquery2dotnet.com">Action</a></li>
+                      <li><a href="http://www.jquery2dotnet.com">Another action</a></li>
+                      <li><a href="http://www.jquery2dotnet.com">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="http://www.jquery2dotnet.com">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="http://www.jquery2dotnet.com">One more separated link</a></li> --}}
+               {{--  </li>
+             </ul> --}}
 
 
 
