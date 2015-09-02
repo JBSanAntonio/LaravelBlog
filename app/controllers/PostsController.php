@@ -97,7 +97,7 @@ class PostsController extends \BaseController {
 			
 			$post->save();
 
-			$post->tag_list_Input::get('tag-list');
+			$post->tag_list = Input::get('tag-list');
 			
 			if(Input::hasFile('image')) {
 				$image = new Image();
@@ -141,12 +141,11 @@ class PostsController extends \BaseController {
 		$tagIds = [];
 		$tags = explode (',', $value);
 		foreach ($tags as $tag => $value) {
-			$tag::firstOrCreate(arrary('name'=>$tagName));
+			$tag::firstOrCreate(array('name'=>$tagName));
 			$tagIds[] = $tag->id;
 			$this->tags()->sync($tagIds);
 		}
 	}
-
 
 	public function show($id)
 	{

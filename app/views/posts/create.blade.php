@@ -12,22 +12,28 @@
 		<div class="form-group" @if($errors->has('title')) has-error @endif">
 			{{Form::label('title', 'Title') }}
 			{{Form::text('title') }}
+		</div>
 		<div class="form-group" @if($errors->has('body')) has-error @endif">
 			{{Form::label('body', 'Body') }}
 			{{Form::textarea('body') }}
 		</div>
 
-{{-- TAGS EXAMPLE FROM jQUERY PLUGIN  --}}
-{{-- below would be in script tags
-$('#tags').addTag('');
-
-$(document).ready(function(){
-	$('#tags').tagsInput(); --}}
-
-{{-- 
 		<div class="form-group tags" @if($errors->has('tags')) has-error @endif"><strong>Tags: </strong>
 			<input name="tags" id="tags" class="tags" value="">
-		</div> --}}
+		</div>
+
+{{-- TAGS EXAMPLE FROM jQUERY PLUGIN  --}}
+
+<script>
+
+/*$('#tags').addTag('');*/
+
+$(document).ready(function(){
+	$('#tags').tagsInput();
+});
+
+</script>
+
 
 {{-- NEW code below for image in form --}}
 		<div class="form-group" @if($errors->has('image_title')) has-error @endif">

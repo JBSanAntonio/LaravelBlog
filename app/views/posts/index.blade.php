@@ -24,6 +24,8 @@
 
 	<h5>Post Content: {{{Str::words($post->body, 20) }}}</h5>
 
+	<h5>Post Tags: {{{Str::words($post->tags, 200) }}}</h5>
+
 	{{-- <h5>Post Image: {{{Str::words($post->image, 20) }}}</h5> --}}
 
 	<a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>

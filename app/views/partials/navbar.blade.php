@@ -30,7 +30,7 @@
                 @else
                     
                 
-             {{--  <li class="dropdown"> --}}
+              <li class="dropdown">
 
          <a href="{{ url('login') }}" class="dropdown-toggle" data-toggle="dropdown">Login <b class="caret"></b></a>
              <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">

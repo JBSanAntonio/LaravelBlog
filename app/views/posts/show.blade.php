@@ -20,7 +20,8 @@
 			<h3><strong>User Name: </strong>{{$post->user->first_name}} {{$post->user->last_name}}</h3>
 			<h3><strong>Post Content: </strong><p></p><p>{{{ $post->body}}}</h3></p>
 			<h3><strong>Post Created: </strong>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h3>
-			
+			<h3><strong>Tags: </strong><p></p><p>{{{ $post->tags}}}</h3></p>
+
 			{{-- <h2>Post Tags: </h2><h4>{{{$post->tags}}}</h4> --}}
 			{{-- <ul>
 				<h3><strong>Tags: </strong>
