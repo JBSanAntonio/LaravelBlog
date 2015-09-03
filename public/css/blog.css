@@ -2,25 +2,24 @@
 
 }
 .postImage {
-	max-width: 300px;
+	max-width: 400px;
 	max-height: auto;
 	padding: 3em;	
+	margin: 3em;
 }
 .showPost {
 	color: #414F57;
 	border: 0.5px solid #414F57;
 	vertical-align: center;
 	padding: 1em;
-	float: left;
-	width: 70%;
+	float: right;
+	width: 50%;
 }
 .showImage {
-	vertical-align: center;
-	padding: 2em;
-	position: relative;
 	padding: 1em;
 	float: left;
-	width: 30%;
+	width: 40%;
+	margin: -50;
 
 }
 

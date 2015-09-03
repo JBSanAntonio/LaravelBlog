@@ -7,14 +7,14 @@
 <div class = "container col-sm-12">
 
 	<div row>
-		<div class = "col-sm-6 showImage">
+		<div class = "col-sm-4 showImage">
 	{{-- conditional, if images then go to foreach; otherwise show post without images --}}
 			@foreach($post->images as $image)
 				<img class = "postImage" src="{{ '/' . $image->url }}">
 			@endforeach
 		</div>
 
-		<div class = "col-sm-6 showPost">
+		<div class = "col-sm-8 showPost">
 			{{-- <tr><th><h1>Post Number: </h1></th><td><h4>{{$post->id}}</td></h4></tr> --}}
 			<h3><strong>Post Title: </strong>{{{$post->title}}}</h3>
 			<h3><strong>User Name: </strong>{{$post->user->first_name}} {{$post->user->last_name}}</h3>
