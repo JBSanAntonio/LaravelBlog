@@ -1,9 +1,5 @@
 @extends('layouts.master')
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="/js/jquery.tagsinput.js"></script>
-	<link rel="stylesheet" type="text/css" href="/css/jquery.tagsinput.css" />	
 
 <title>Post Create Form</title>
 
@@ -29,11 +25,15 @@
 
 {{-- TAGS EXAMPLE FROM jQUERY PLUGIN  --}}
 
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tagsinput.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/jquery.tagsinput.css" />	
 <script>
 
-/*$('#tags').addTag('');*/
 
 $(document).ready(function(){
+	$('#tags').addTag('');
 	$('#tags').tagsInput();
 });
 
