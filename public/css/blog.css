@@ -2,18 +2,26 @@
 
 }
 .postImage {
-	max-width: 400px;
+	max-width: 300px;
 	max-height: auto;
+	padding: 3em;	
 }
 .showPost {
 	color: #414F57;
 	border: 0.5px solid #414F57;
 	vertical-align: center;
 	padding: 1em;
+	float: left;
+	width: 70%;
 }
 .showImage {
-	vertical-align: bottom;
+	vertical-align: center;
 	padding: 2em;
+	position: relative;
+	padding: 1em;
+	float: left;
+	width: 30%;
+
 }
 
 .image { 
@@ -149,37 +157,10 @@ footer a:hover {
       background-color: #005f5f;
       color: #fff;
     }
-
-
-
-
-/*h1 {
-	padding: 0.5em;
+.showPage {
+	padding: 2em;
+	border: 0.5px solid darkgrey;
 }
+.postImage {
 
-nav a {
-	text-decoration: none;
-	color: #444;
-	transition: .3s background-color;
 }
-nav a:hover {
-      background-color: #005f5f;
-    }
-a.active {
-  background-color: #fff;
-  color: #444;
-}
- @media screen and (min-width: 600px) {
-   .nav li {
-      width: 120px;
-      border-bottom: none;
-      height: 50px;
-      line-height: 50px;
-      font-size: 1.4em;
-      margin-right: -4px;
-    }
-  }
-  .table {
-
-  }
-*/

@@ -8,33 +8,39 @@
 
 	{{ $posts->links() }}
 
-{{-- below gives message for all errors in the $validator array in the PostsController.php file --}}
+	{{-- <div row class = "col-md-12 postImage">
 
-{{-- $posts = DB::table('posts')
-                ->orderBy('created_at', 'desc')
-                ->get(); --}}
-        
+		<div class = "showPost col-md-8">  --}}
 
-	@foreach($posts as $post)
-	<h3><strong>Post Title: {{{$post->title}}}</strong></h3>
+			@foreach($posts as $post)
+			<h3><strong>Post Title: {{{$post->title}}}</strong></h3>
 
-	<h4><strong>Posted By: </strong>{{$post->user->first_name}} {{$post->user->last_name}}</h4>
+			<h4><strong>Posted By: </strong>{{$post->user->first_name}} {{$post->user->last_name}}</h4>
 
-	<h5><strong>Post Content: </strong>{{{Str::words($post->body, 20) }}}</h5>
+			<h5><strong>Post Content: </strong>{{{Str::words($post->body, 10) }}}</h5>
 
-	<h5><strong>Post Created: </strong>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h5>
+			<h5><strong>Post Created: </strong>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h5>
 
-	<h5><strong>Post Tags: </strong>
+			<h5><strong>Post Tags: </strong>
 
-		@foreach($post->tags as $tag)
-			{{{ $tag->name }}}
-		@endforeach
-	 </h5>
+				@foreach($post->tags as $tag)
+					{{{ $tag->name }}}
+				@endforeach
+	 		</h5>
+				<a href="{{{ action('PostsController@show'), $post->id }}}"><h3><strong>Read Post</strong></h3></a>
+	 	</div>
+	
+		{{-- <div class = "showImage col-md-4"> --}}
 
-	{{-- <h5>Post Image: {{{Str::words($post->image, 20) }}}</h5> --}}
+				<h5 class = "allPostsImage"></h5>
 
-	<a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>
-	@endforeach
+					@foreach($post->images as $image)
+							<img class = "postImage" src="{{ '/' . $image->url }}">
+						@endforeach
+
+				@endforeach
+	 	</div>
+	</div>
 
 
 	{{-- TO DO: ADD TAGS TO INDEX PAGE --}}
