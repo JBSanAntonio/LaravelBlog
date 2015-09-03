@@ -7,30 +7,25 @@
 <div class = "container col-sm-12">
 
 	<div row>
-		<div class = "col-sm-5">
+		<div class = "col-sm-6 showImage">
 	{{-- conditional, if images then go to foreach; otherwise show post without images --}}
 			@foreach($post->images as $image)
 				<img class = "postImage" src="{{ '/' . $image->url }}">
 			@endforeach
 		</div>
 
-		<div class = "col-sm-7">
+		<div class = "col-sm-6 showPost">
 			{{-- <tr><th><h1>Post Number: </h1></th><td><h4>{{$post->id}}</td></h4></tr> --}}
 			<h3><strong>Post Title: </strong>{{{$post->title}}}</h3>
 			<h3><strong>User Name: </strong>{{$post->user->first_name}} {{$post->user->last_name}}</h3>
 			<h3><strong>Post Content: </strong><p></p><p>{{{ $post->body}}}</h3></p>
 			<h3><strong>Post Created: </strong>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h3>
-			<h3><strong>Tags: </strong><p></p><p>{{{ $post->tags}}}</h3></p>
 
-			{{-- <h2>Post Tags: </h2><h4>{{{$post->tags}}}</h4> --}}
-			{{-- <ul>
-				<h3><strong>Tags: </strong>
-					@foreach($post->tags as $tag)
-						<li>{{ $tag->name }}</li>
-					@endforeach
-				</h3>
-			</ul> --}}
-
+			<h3><strong>Post Tags: </strong>
+			@foreach($post->tags as $tag)
+				{{{ $tag->name }}}
+			@endforeach
+			</h3>
 
 	{{-- <a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>
  --}}

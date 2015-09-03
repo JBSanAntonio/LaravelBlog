@@ -32,6 +32,8 @@ Route::get('weatherAPI', 'HomeController@showWeatherAPI');
 
 Route::get('signup', 'HomeController@showSignup');
 
+Route::get('login', 'HomeController@showLogin');
+
 Route::get('aboutUs', 'HomeController@showAboutUs');
 
 Route::get('form', array('as' => 'myform', function()

@@ -1,13 +1,19 @@
 .container {
-	
+
 }
 .postImage {
 	max-width: 400px;
 	max-height: auto;
 }
 .showPost {
-	color: red;
-	border: 2px solid darkgrey;
+	color: #414F57;
+	border: 0.5px solid #414F57;
+	vertical-align: center;
+	padding: 1em;
+}
+.showImage {
+	vertical-align: bottom;
+	padding: 2em;
 }
 
 .image { 
@@ -63,11 +69,15 @@ h1, h5  {
 .header {
 
 }
+
 .navbar {
 	width: 100%;
-	display: inline-block;
+	display: inline;
 	padding: 0;
 	margin: 0 auto;
+}
+.nav li {
+	text-align: left;	
 }
 .btn, .btn-default {
 	background-color:  #456770;
@@ -75,13 +85,12 @@ h1, h5  {
 	color: #DFE9EB;
 }
 
-nav a {
+#nav a {
 	text-decoration: none;
-	color: #444;
-	/*transition: .3s background-color;*/
+	color: #414F57;
 }
 
-nav a:hover {
+#nav a:hover {
      background-color: #DFE9EB
 }
 
@@ -92,26 +101,37 @@ nav a.active, {
 .footer {
 	text-align: center;
 }
-.introLine1 {
-	padding: .75em;
-	text-align: center;
-	font-style: bold;
-	font-size: 3em;
-	color:  #456770;
-}
-.introLine2 {
+.introLine	 {
 	padding: .5em;
 	text-align: center;
 	font-style: bold;
-	font-size: 3em;
-	color:  #456770;
+	color:  #414F57;
+	font-size: 5em;	
+}	
+.secondLine {
+	text-align: center;
+	color:  #414F57;
 }
-.homebullets {
-	padding: 1em;
-	margin: 2em 0 0 7em;
+.homeList {
+	list-style-type: none;
+	color: #0F5C89;
+	padding: 2	em;	
+}
+.homeList1	 {
+	text-align: left;
+	padding: 2em;
+}
+.homeList2	 {
+	text-align: center;
+	padding: 2em;
+}
+.homeList3	 {
+	text-align: right;
+	padding: 2em;
 }
 .homeBonVoyage {
-	color:  #456770;
+	color:  #0F5C89;
+	padding: 1em;
 	font-style: bold;
 	text-align: center;
 	font-size: 5em;
@@ -119,7 +139,7 @@ nav a.active, {
 footer a {
 	margin: 0;
 	padding: 0;
-	color: 456770;
+	color: #377bb5;
 	font-size: 1.5em;
 }
 .footerText {
@@ -127,7 +147,7 @@ footer a {
 }
 footer a:hover {
       background-color: #005f5f;
-      /*color: white;*/
+      color: #fff;
     }
 
 
@@ -137,26 +157,6 @@ footer a:hover {
 	padding: 0.5em;
 }
 
-
-
-.nav ul {
-	list-style: none;
-	background-color: #C8DFFF;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-}
- .nav li {
- 	display: inline-block;
- 	width: 100%;
- 	float: left;
- 	overflow: auto;
-	font-family: 'Oswald', sans-serif;
-	font-size: 1.2em;
-	line-height: 40px;
-	height: 40px;
-	border-bottom: 1px solid #888;
-}
 nav a {
 	text-decoration: none;
 	color: #444;

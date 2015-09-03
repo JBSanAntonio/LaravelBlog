@@ -191,15 +191,20 @@ class PostsController extends \BaseController {
 	{
 		//
 		$post = Post::find($id);
+		$tags = $post->tags;
+		$tagNames=[];
 
-			// set flash data
-			Session::flash('successMessage', 'Edit selected post below.');
+		foreach ($tags as $tag) {
+			$tagNames[] = $tag->name;
+		}
+		
+		$tagString = implode(',', $tagNames);
 
-			// retrieve flash data (same as any other session variable)
-			$value = Session::get('key');
+		$post->tagString = $tagString;
+		// set flash data
+		Session::flash('successMessage', 'Edit selected post below.');
 
 		return View::make('posts.edit')->with('post', $post);
-		return 'This page shows a post by id number and lets you edit it';
 	}
 
 	/**

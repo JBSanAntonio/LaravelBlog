@@ -17,30 +17,28 @@
 @section('content')
 
 	
-	<h2 class = "introLine1">		
-		Share your own travel experiences with others
+	<h2 class = "introLine">		
+		Getaway OR Share 
 	</h2>
-	<h2 class = "OR">
-		<p></p>
-		OR
-		<p></p>
-	</h2>
-	<h2 class = "introLine2">
-		Getaway without worry, cost, or stress
-	</h2>
+
+	<h3 class = "secondLine">
+			without worry, cost, or stress
+	</h3>
 
 <hr>
 
 <h3>
-<ul>
-	<li class = "homeBullets">
-		Visit to escape the mundane. View exotic and exciting destinations near and far. 
+<ul class = "homeList">
+	<li class = "homeList1">
+		Visit to escape the mundane
 	</li>
 
-	<hr>
+	<li class = "homeList2">
+		View exotic and exciting destinations near and far 
+	</li>
 
-	<li class = "homeBullets">
-		Signup now to start posting about your trip.
+	<li class = "homeList3">
+		Signup now to start posting about your trip
 		{{-- No need to struggle with airports and transfers or max out your credit card.  --}}
 	</li>
 </ul>

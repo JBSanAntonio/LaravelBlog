@@ -18,17 +18,18 @@
 	@foreach($posts as $post)
 	<h3><strong>Post Title: {{{$post->title}}}</strong></h3>
 
-	<h4>Posted By: {{$post->user->first_name}} {{$post->user->last_name}}</h4>
+	<h4><strong>Posted By: </strong>{{$post->user->first_name}} {{$post->user->last_name}}</h4>
 
-	<h5>Post Created: {{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h5>
+	<h5><strong>Post Content: </strong>{{{Str::words($post->body, 20) }}}</h5>
 
-	<h5>Post Content: {{{Str::words($post->body, 20) }}}</h5>
+	<h5><strong>Post Created: </strong>{{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A')}}</h5>
 
-	<h5>Post Tags: </h5>
+	<h5><strong>Post Tags: </strong>
 
-	@foreach($post->tags as $tag)
-		{{{ $tag->name }}}
-	@endforeach
+		@foreach($post->tags as $tag)
+			{{{ $tag->name }}}
+		@endforeach
+	 </h5>
 
 	{{-- <h5>Post Image: {{{Str::words($post->image, 20) }}}</h5> --}}
 
@@ -37,8 +38,6 @@
 
 
 	{{-- TO DO: ADD TAGS TO INDEX PAGE --}}
-
-	
 
 @stop
 

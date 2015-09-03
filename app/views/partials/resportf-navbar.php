@@ -1,8 +1,5 @@
 {{-- Navigation --}}
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
 <div class="container">
    <div class="row col-md-12">
         <nav class="navbar navbar-default container-fluid" role="navigation">
@@ -18,12 +15,28 @@
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                  <li class="active"><a href="{{action("HomeController@showResportfHome") }}">Home</a></li>
-                  <li class="active"><a href="{{action("HomeController@showResume") }}">The RESUME</a></li>
-                  <li><a href="{{action("HomeController@showPortfolio") }}">The PORTFOLIO</a></li>
-              </ul>
+             <ul class="nav navbar-nav">
+                <li class="active"><a href="{{action("HomeController@showResportfHome") }}">Home</a></li>
+                <li class="active"><a href="{{action("HomeController@showResume") }}">The RESUME</a></li>
+                <li><a href="{{action("HomeController@showPortfolio") }}">The PORTFOLIO</a></li>
 
+                {{-- <li class="dropdown">
+                   <a href="http://www.jquery2dotnet.com" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                   <ul class="dropdown-menu">
+                      <li><a href="http://www.jquery2dotnet.com">Action</a></li>
+                      <li><a href="http://www.jquery2dotnet.com">Another action</a></li>
+                      <li><a href="http://www.jquery2dotnet.com">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="http://www.jquery2dotnet.com">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="http://www.jquery2dotnet.com">One more separated link</a></li> --}}
+              </ul>
+               {{--  </li>
+             </ul> --}}
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script>
     $('.dropdown-toggle').dropdown()
 </script>
