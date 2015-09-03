@@ -39,6 +39,10 @@
 			<input name="tag_list" id="tags" class="tags" value="{{{ $post->tagString }}}">
 		</div>
 
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tagsinput.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/jquery.tagsinput.css" />	
 
 		<script>/*$('#tags').addTag('');*/
 
