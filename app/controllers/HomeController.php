@@ -14,7 +14,6 @@ class HomeController extends BaseController {
 	|	Route::get('/', 'HomeController@showWelcome');
 	|
 	*/
-
 	public function showWelcome()
 	{
 		return View::make('hello');
@@ -23,9 +22,9 @@ class HomeController extends BaseController {
 	{
 		return View::make('home');
 	}
-	public function showLaunch()
+	public function showJBuser()
 	{
-		return View::make('launch');
+		return View::make('jbuser');
 	}
 
 	public function showResume()

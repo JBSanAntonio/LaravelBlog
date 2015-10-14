@@ -33,7 +33,7 @@ Route::get('/', 'HomeController@showHome');
 
 Route::get('home', 'HomeController@showHome');
 
-Route::get('launch', 'HomeController@showLaunch');
+Route::get('launch', 'HomeController@showJBuser');
 
 Route::get('resume', 'HomeController@showResume');
 

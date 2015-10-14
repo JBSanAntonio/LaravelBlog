@@ -65,7 +65,7 @@ View The
 		  <dd>Model-view-controller (MVC) project using Laravel, PHP, MySQL, JS, jQuery, HTML, and CSS | <a href="{{action("HomeController@showHome") }}">Demo Vagabondtrip.com Travel Blog</a></dd>
 		  <p></p>
 		  <dt>MVC Website:</dt>
-		  <dd>Model-view-controller (MVC) team project using PHP, MySQL, HTML, CSS, and Github version control | <a href="{{action("HomeController@showWineseller") }}">Homepage for Wineseller Website</a></dd>
+		  <dd>Model-view-controller (MVC) team project using PHP, MySQL, HTML, CSS, and Github version control | <a href="{{action("HomeController@showWineseller") }}">Homepage for Wineseller Website <em>Mock View of Site</em></a></dd>
 		  <p></p>
 		  <dt>Calculator:</dt>
 		  <dd>Online calculator programmed in Javascript and styled after Mac calculator using HTML5 and CSS |
