@@ -1,0 +1,56 @@
+@extends('layouts.resume-portfolio-master')
+
+@section('title')
+    <title>Portfolio</title>
+
+
+@section('content')
+
+ 	<div class="row">
+        <div class="col-xs-6 col-lg-4 project">
+          <h2>Model-View-Controller CMS Site</h2>
+          <p>Content Management System MVC website programmed with Laravel, PHP, MySQL, JS, jQuery, HTML, and CSS. Added image uploading. Developed many-to-many relationship with pivot table in MySQL to add Tagging.</p>
+          <p><a class="btn btn-default" href="{{{ action('HomeController@showHome') }}}" role="button">Visit Vagabondtrip.com &raquo;</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+
+        <div class="col-xs-6 col-lg-4 project">
+          <h2>API Ajax Project</h2>
+          <p>OpenWeatherMap & GoogleMaps API Project </p>
+          <p><a class="btn btn-default" href="{{{ action('HomeController@showWeatherAPI') }}}" role="button">View &raquo;</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+
+
+        <div class="col-xs-6 col-lg-4 project">
+          <h2>Web Game</h2>
+          <p>Simple Simon game programmed in HTML, CSS, Javascript, and JQuery</p>
+          <p><a class="btn btn-default" href="{{{ action('HomeController@showSimon') }}}" role="button">Demo Game &raquo;</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+
+    	<div class="col-xs-6 col-lg-4 project">
+          <h2>Model-View-Controller Website</h2>
+          <p>Model-view-controller (MVC) team project using PHP, MySQL, HTML, CSS, and Github version control</p>
+          <p><a class="btn btn-default" href="{{{ action('HomeController@showWineseller') }}}" role="button">View Home Page &raquo;</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+
+        <div class="col-xs-6 col-lg-4 project">
+          <h2>Trends Website</h2>
+          <p>Personal Trends Website in development. Tracked with Google Analytics.</p>
+          <p><a class="btn btn-default" href="trendlookout.com" role="button">View details &raquo;</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+
+        <div class="col-xs-6 col-lg-4 project">
+          <h2>Javascript Calculator</h2>
+          <p>Online calculator programmed in Javascript and styled after Mac calculator using HTML5 and CSS</p>
+          <p><a class="btn btn-default" href="{{{ action('HomeController@showCalculator') }}}" role="button">Demo Calculator &raquo;</a></p>
+        </div><!--/.col-xs-6.col-lg-4-->
+
+        <div class="col-xs-6 col-lg-4 project">
+          <h2>Wordpress Website</h2>
+          <p>Personal Wordpress blog created in 2014 covering wine, cuisine and travel. Integrated with Facebook, Twitter, and IFTTT.</p>
+          <p><a class="btn btn-default" href="venueandvine.com" role="button">View details &raquo;</a></p>
+
+      </div><!--/row-->
+    </div><!--/.col-xs-12.col-sm-9-->
+   </div>
+
+@stop

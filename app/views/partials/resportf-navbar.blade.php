@@ -21,9 +21,8 @@
               <ul class="nav navbar-nav">
                   <li class="active"><a href="{{action("HomeController@showResportfHome") }}">Home</a></li>
                   <li class="active"><a href="{{action("HomeController@showResume") }}">The RESUME</a></li>
-                  <li><a href="{{action("HomeController@showPortfolio") }}">The PORTFOLIO</a></li>
+                  <li><a href="{{action("HomeController@showPortfolioTwo") }}">The PORTFOLIO</a></li>
               </ul>
-
 <script>
     $('.dropdown-toggle').dropdown()
 </script>

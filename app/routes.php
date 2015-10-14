@@ -12,15 +12,34 @@
 */
 Route::resource('posts', 'PostsController');
 
+/*next 2 routes should really be in PostsController*/
+/*
+Route::get('posts/manage') 
+Route::get('posts/list')*/
+
+/*
+Route::get("test", function() {
+		return View::make('test');
+});
+
+Route::get('test-json', function() {
+	$posts = Post::all();
+	$posts = Post::with('user');
+
+	return Response::json($posts);
+});*/
+
 Route::get('/', 'HomeController@showHome');
 
 Route::get('home', 'HomeController@showHome');
 
-Route::get('resportfHome', 'HomeController@showResportfHome');
+Route::get('launch', 'HomeController@showLaunch');
 
 Route::get('resume', 'HomeController@showResume');
 
 Route::get('portfolio', 'HomeController@showPortfolio');
+
+Route::get('portfolioTwo', 'HomeController@showPortfolioTwo');
 
 Route::get('calculator', 'HomeController@showCalculator');
 

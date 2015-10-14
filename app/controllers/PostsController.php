@@ -9,6 +9,7 @@ class PostsController extends \BaseController {
 		$this->beforeFilter('auth', array('except' => array('index', 'show')));
 	}
 
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -143,8 +144,13 @@ class PostsController extends \BaseController {
 		$tagIds = [];
 		$tags = explode (',', $value);
 		foreach ($tags as $tagName) {
+			/* firstOrCreate uses first instance or creates a new instantiation - 
+			stops tags table from duplicating tag names*/
 			$tag = Tag::firstOrCreate(array('name'=>$tagName));
 			$tagIds[] = $tag->id;
+			/* sync is a Laravel method to attach related models; 
+			sync accepts array of ids to be placed on pivot table
+			only the ids in the array will be on the intermediate table post_tag_table.php*/
 			$post->tags()->sync($tagIds);
 		}
 	}
@@ -220,6 +226,8 @@ class PostsController extends \BaseController {
 		$post->title=Input::get('title');
 		$post->body=Input::get('body');
 		$post->save();
+		$this->setTagListAttribute(Input::get('tag_list'), $post->id);
+
 
 		// set flash data
 		Session::flash('successMessage', 'Your update was successful.');

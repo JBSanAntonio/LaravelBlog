@@ -23,9 +23,9 @@ class HomeController extends BaseController {
 	{
 		return View::make('home');
 	}
-	public function showResportfHome()
+	public function showLaunch()
 	{
-		return View::make('resportf-Home');
+		return View::make('launch');
 	}
 
 	public function showResume()
@@ -36,6 +36,11 @@ class HomeController extends BaseController {
 	public function showPortfolio()
 	{
 		return View::make('portfolio');
+	}
+
+	public function showPortfolioTwo()
+	{
+		return View::make('portfolioTwo');
 	}
 
 	public function showCalculator()

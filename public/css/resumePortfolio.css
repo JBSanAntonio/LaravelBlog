@@ -1,10 +1,43 @@
+/*added CSS3 Flex Box to position projects*/
+
+.flex-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-flex-direction: row; /* Safari */
+  flex-direction:         row;
+   -webkit-flex-wrap: wrap; /* Safari */
+  flex-wrap:         wrap;
+  -webkit-justify-content: center; /* Safari */
+  justify-content:         center;
+   -webkit-justify-content: space-around; /* Safari */
+  justify-content:         space-around;
+   -webkit-align-content: flex-start; /* Safari */
+  align-content:         flex-start;
+}
+/*.flex-item {
+  -webkit-flex-grow: <number>;  Safari 
+  flex-grow:         <number>;
+}*/
+.grid {
+	columnWidth: 200px;
+	width: 30%;
+	
+}
+.grid-item--width3 { 
+	width: 100%; 
+}
+
 .title {
 	margin: 300px;
 	text-align: center;
-}
+} 	
 
 body {
 	font-family: avenir, Book Antiqua, "Helvetica Neue", Helvetica, Arial,sans-serif;
+}
+.portfolioBody {
+	padding: 1.5em;
+	margin-bottom: 3em;
 }
 .resumeBody {
 	width: 100%;

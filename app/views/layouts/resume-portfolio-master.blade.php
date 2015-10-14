@@ -7,8 +7,9 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-
 	<link href="http://fonts.googleapis.com/css?family=Bitter:400,700">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+	<script src="/path/to/masonry.pkgd.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="/css/resumePortfolio.css">
 
 

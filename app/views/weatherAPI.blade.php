@@ -7,7 +7,7 @@
 	<style type="text/css">
 
 	body {	
-		background-color: #87CEFA;
+		background-color: #0074D9;
 	}
 	#map-canvas {
 		height: 600px;
@@ -164,15 +164,15 @@
 
         // Render the map
         var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-	// Add a new pushpin marker to our existing map
-		    var image = 'img/pushpin.jpg';
+	// Add a new pushpin marker to our existing map - feature deprecated
+		  /*  var image = 'img/pushpin.jpg';
 		    var marker = new google.maps.Marker({
 			    position: mapOptions.center,
 			    map: map,
 			    icon: image,
 			    draggable: true,
 				animation: google.maps.Animation.DROP
-		    });
+		    });*/
 		    //Re-center the map around the marker when window is resized
 			google.maps.event.addDomListener(window, 'resize', function() {
 			  map.setCenter(marker.getPosition());

@@ -5,7 +5,7 @@
 
       	<a href="{{action("HomeController@showResportfHome") }}">Home | </a></li>
       	<a href="{{action("HomeController@showResume") }}">The RESUME | </a>
-      	<a href="{{action("HomeController@showPortfolio") }}">The PORTFOLIO</a>
+      	<a href="{{action("HomeController@showPortfolioTwo") }}">The PORTFOLIO</a>
      	
       </div>
     </div>

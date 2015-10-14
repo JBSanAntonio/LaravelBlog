@@ -19,11 +19,12 @@
 </head>
 
 <body>
+  <main class="container-fluid">
     
-  <div class = "header">
+  <div class = "top">
     <div row>
       <div class = "col-md-4">
-        <img class = "logoWineseller" src="/img/logoWineseller.png">
+        <img class = "logoWineseller image" src="http:/img/logoWineseller.png">
       </div>
 
       <div class = "col-md-8">
@@ -44,15 +45,13 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
         
           <ul class="nav navbar-nav">
             <li><a href="../index.php">Home</a></li>
             <li><a href="../winePage.php">Wine</a></li>
             <li><a href="../glasswarePage.php">Glassware</a></li>
             <li><a href="../wineAccessoriesPage.php">Accessories</a></li>
-            
-              
+                     
         <li role="separator" class="divider"></li>
     
           </ul>
@@ -71,9 +70,9 @@
   </div><!-- /.container-fluid -->
 </nav>
     
-<div class = "linkBoxes">
+<div class = "row linkBoxes clearfix">
 
-    <div class="row topRow">
+   {{--  <div class="row topRow"> --}}
         <p></p>
         <div class="col-md-4"><a href="../adsWineseller.index.php"><img class = "displayed cellarImage" src="../img/visitWineCellar.jpg"><h4 class = "show Cellar">Visit the Cellar</h4></img></a></div>
         <p></p>
@@ -82,7 +81,7 @@
         <div class="col-md-4"><a href="../users.create.php"><img class = "displayed" src="../img/join.png"><h4 class = "join Cellar">Join the Cellar</h4></img></a></div>
 
 
-    <div class="bottomRow">
+   {{--  <div class="row bottomRow"> --}}
        <div class="col-md-4"><a href="winePage.php"><img class = "displayed wineImage" src="../img/wines2.jpg"><h4 class = "wine Box">Wine</h4></img></a></div>
 
        <div class="col-md-4"><a href="glasswarePage.php"><img class = "displayed" src="../img/glassesDecanter.jpg"><h4 class = "glassware Box">Glassware</h4></img></a></div>
@@ -100,7 +99,7 @@
       <a href="PrivacyPolicy.php">Privacy Policy</a>
       </div>
   </div>
-
+</main>
 </body>
 
 </html>

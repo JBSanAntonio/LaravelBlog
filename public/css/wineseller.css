@@ -1,8 +1,7 @@
 .cat-list {
 	color: white;
 }
-.header {
-	background-image: url("img/logo.png");
+.top {
 	background-position: top-left;
 	background-repeat: no-repeat;
 }
@@ -10,17 +9,17 @@
 	background-size: 20%;
 
 }
-/*.main-container {
-	background-image: url("filterEffectsWineCellar.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: right top;
-	margin: 3em;
-	background-size: 60%;
-}*/
+.logoWineseller {
+
+}
+.footer {
+	text-align: center;
+	padding-top: 3em;
+}
 body {
 	background-image: url("/img/brickwall.png");
-	background-size: 100%;
+	background-size: 20%;
+	background-repeat: repeat;
 	color: #darkgrey;
 }
 .intro {
@@ -41,4 +40,11 @@ body {
 .join {
 	margin-bottom: 142px;	
 }
-
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+}
+.row {
+	text-align: center;
+	margin: 0;
+}

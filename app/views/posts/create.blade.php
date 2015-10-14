@@ -31,7 +31,6 @@
 	<link rel="stylesheet" type="text/css" href="/css/jquery.tagsinput.css" />	
 <script>
 
-
 $(document).ready(function(){
 	$('#tags').addTag('');
 	$('#tags').tagsInput();

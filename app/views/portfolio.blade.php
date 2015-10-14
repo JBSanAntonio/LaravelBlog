@@ -8,6 +8,8 @@
 
 
 <h1 class="portfolioCover">The PORTFOLIO</h1>
+
+<a href="{{{ action('HomeController@showPortfolioTwo') }}}"></a>
 {{-- <h2>
 VIEW MY 
 <a href="{{{ action('HomeController@showResume') }}}">Resume</a>

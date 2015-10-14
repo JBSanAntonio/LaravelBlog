@@ -27,8 +27,6 @@
 			@endforeach
 			</h3>
 
-	{{-- <a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>
- --}}
  	<p></p>
 	<a href="{{{action('PostsController@edit',$post->id)}}}" class="btn btn-default">Edit Post<span class = "glyphicon glyphicon-pencil"></span></a>
 
@@ -65,5 +63,6 @@
 
   ga('create', 'UA-66832743-1', 'auto');
   ga('send', 'pageview');
+</script>
 
 </script>

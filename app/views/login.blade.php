@@ -12,7 +12,7 @@
 @section('content')
 
 
-{{ Form::open(array('url' => 'login')) }} {{ Form::token() }}
+{{ Form::open(array('action' => 'HomeController@doLogin', 'files'=>true)) }} {{ Form::token() }}
 <h1>Login</h1>
 
 <!-- if there are login errors, show them here -->

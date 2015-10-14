@@ -6,14 +6,16 @@
 
 <h1>Blog Posts</h1>
 
-	{{ $posts->links() }}
-
 {{-- below gives message for all errors in the $validator array in the PostsController.php file --}}
 
 {{-- $posts = DB::table('posts')
                 ->orderBy('created_at', 'desc')
                 ->get(); --}}
-        
+    
+<iframe class="panoramio"
+   src="http://www.panoramio.com/wapi/template/list.html?tag=travel&amp;width=900&amp;height=250&amp;columns=12&amp;rows=3&amp;orientation=horizontal"
+   frameborder="0" width="900" height="250" scrolling="no" marginwidth="0" marginheight="0">
+</iframe>
 
 	@foreach($posts as $post)
 	<h3><strong>Post Title: {{{$post->title}}}</strong></h3>
@@ -36,6 +38,11 @@
 	<a href="{{{action('PostsController@show', $post->id)}}}">Read Post</a>
 	@endforeach
 
+{{-- <iframe
+   src="http://www.panoramio.com/wapi/template/list.html?tag=travel&amp;width=900&amp;height=250&amp;columns=10&amp;rows=1&amp;orientation=horizontal"
+   frameborder="0" width="900" height="250" scrolling="no" marginwidth="0" marginheight="0">
+</iframe>
+ --}}
 
 	{{-- TO DO: ADD TAGS TO INDEX PAGE --}}
 
@@ -61,9 +68,7 @@
 
 </script>
 
-
-
-
+ 
 
 
 

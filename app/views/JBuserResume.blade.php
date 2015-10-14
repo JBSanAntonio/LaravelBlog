@@ -109,22 +109,21 @@ View The
 				<div class = "col-md-4">
 					<h5>Strategic Marketing & <br>Communications</h5> 
 					<ul>
-						<li>Writing and editing for corporate websites, social media, briefs, broadcast/print media, speeches, awards, and proposals </li>
+						<li>Writing and editing for corporate websites, social media, briefs, broadcast/print media, speeches, and proposals </li>
 						<p></p>
-						<li>Key contributor to rebranding, logo redesign, website overhaul and campaign launch</li>
+						<li>Key contributor to rebranding, logo redesign, website overhaul and campaign launch; collaborated with IT Director, web dev and design firms, and global PR/marketing firm</li>
 						<p></p>
-						<li>Project collaboration with IT Director, web dev and design firms, and global PR/marketing firm (APCO)</li> 
+						<li>Market trends research, analyzed marketing strategy, presentation skills, and project collaboration</li> 
 					</ul>
-				
 				</div>
 				<div class = "col-md-4">
 				<h5>Social Media Marketing <br>Campaigns and Promotion</h5>
 					<ul>
+						<li>Publish WordPress blog | integrated with social media sites</li>
+						<p></p>
 						<li>Email marketing, survey, lead generation, and content creation sites, including SurveyMonkey, Mailchimp, Hootsuite, and IFTTT</li>
 						<p></p>
-						<li>Publish WordPress blog; integrated with Facebook and Twitter</li>
-						<p></p>
-						<li>Google analytics, market trends research, and marketing campaign strategy</li>
+						<li>Met deadlines, developed marketing budget, and evaluated ROI</li>
 					</ul>
 				</div>
 
@@ -134,9 +133,9 @@ View The
 					<ul>
 						<li>Earned $1 billion total revenue in federal contracts as lead Business Development/Proposal Director</li>
 						<p></p>
-						<li>Established teaming relationships with Fortune 500/mid/small firms through networking</li>
+						<li>Established teaming relationships with Fortune 500/mid/small firms | extensive b2b networking</li>
 						<p></p>
-						<li>Met deliverables on-time/under-budget as Assistant Program Manager of global pharmacy study; assembled team, developed project plan, distributed survey, and delivered results</li>
+						<li>Met deliverables on-time/under-budget as Assistant Program Manager of Army Global Pharmacy Study; assembled team, developed project plan, distributed survey globally, and delivered results to Army Pharmacy Consultant</li>
 					</ul>
 				</div>
 			</div>
@@ -151,6 +150,9 @@ View The
 				<li>1997-2006 |	Freelance Writer, School Volunteer,	Waco, TX and San Antonio, TX</li>
 				<li>1994-96 |	Lexis/Nexis Information Consultant, Reed Elsevier, Miamisburg, OH</li>
 				<li>1992-94 |	Lexis/Nexis Business Information Specialist,	Mead Data Central, Miamisburg, OH</li>
+				<li>1990-91 |	US Army Judge Advocate General Intern,	Walter Reed Army Medical Center, DC and Army Claims Service, Ft. Meade, MD</li>
+				<li>1989 |	International Security Policy Analyst, 	Office of the Secretary of Defense, Pentagon, DC</li>
+				<li>1988 |	Survey Research Assistant,	Survey Research Center, University of MI, Ann Arbor, MI</li>
 			</ul>
 	</div>
 
@@ -161,7 +163,7 @@ View The
 				<li>Senior Professional in Human Resources (SPHR)</li> 
 				<li>Top 10 US College Woman Award | Harry S. Truman Scholarship (Julie Ann Wyoral)</li>
 				<li>Circumnavigator Club Foundation Grantee - traveled to Somalia, Pakistan, Thailand, Hong Kong, and the Philippines to study the world refugee situation</li>
-				<li>European Cultural History Program - Travel Study</li>
+				<li>European Cultural History Program; travel-study in USSR, Middle East, and Europe</li>
 			</ul>
 	</div>
 

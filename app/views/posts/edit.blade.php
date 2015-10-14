@@ -26,7 +26,7 @@
 			{{Form::text('image_title') }}         
 	    </div>
 		<div class="form-group" @if($errors->has('image')) has-error @endif">
-			{{Form::label('image', 'image') }}
+			{{Form::label('image', 'Replace image') }}
 			{{Form::file('image') }}         
 	    </div>
 
@@ -43,7 +43,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script src="/js/jquery.tagsinput.js"></script>
 	<link rel="stylesheet" type="text/css" href="/css/jquery.tagsinput.css" />	
-
+-
 		<script>/*$('#tags').addTag('');*/
 
 			$(document).ready(function(){
