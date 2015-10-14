@@ -9,7 +9,7 @@
 
 <h1 class="portfolioCover">
 
-<a href="{{{ action('HomeController@showPortfolioTwo') }}}">The PORTFOLIO</a></h1>
+<a href="{{{ action('HomeController@showPortfolioTwo') }}}">View The PORTFOLIO</a></h1>
 {{-- <h2>
 VIEW MY 
 <a href="{{{ action('HomeController@showResume') }}}">Resume</a>
