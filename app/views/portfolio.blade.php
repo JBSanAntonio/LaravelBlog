@@ -7,9 +7,9 @@
 @section('content')
 
 
-<h1 class="portfolioCover">The PORTFOLIO</h1>
+<h1 class="portfolioCover">The PORTFOLIO
 
-<a href="{{{ action('HomeController@showPortfolioTwo') }}}"></a>
+<a href="{{{ action('HomeController@showPortfolioTwo') }}}"></a></h1>
 {{-- <h2>
 VIEW MY 
 <a href="{{{ action('HomeController@showResume') }}}">Resume</a>
