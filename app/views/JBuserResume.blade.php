@@ -58,6 +58,9 @@ View The
 	<div row>
 		<div class = "col-md-6">
 		<dl class="dl-horizontal">
+		  <dt>MVC Website:</dt>
+		  <dd>Model-view-controller (MVC) Create, Read, Update, and Delete (CRUD) team project using PHP, MySQL, jQuery, JS, HTML5, CSS3, Laravel 4.2</a> | <a href="http://wannaplay.site"></dd>
+		  <p></p>
 		  <dt>CMS Blogsite:</dt>
 		  <dd>Model-view-controller (MVC) project using Laravel, PHP, MySQL, JS, jQuery, HTML, and CSS | <a href="{{action("HomeController@showHome") }}">Demo Vagabondtrip.com Travel Blog</a></dd>
 		  <p></p>

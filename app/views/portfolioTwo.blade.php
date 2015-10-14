@@ -8,7 +8,10 @@
 <div class="portfolioBody flex-container">
 
   <div class="grid-item--width3 flex-item js-masonry project proj1 flex-item">
-    <h4>Laravel project</h4>
+    <h4>Laravel projects</h4>
+    <dt>MVC Website:</dt>
+    <dd>Model-view-controller (MVC) Create, Read, Update, and Delete (CRUD) team project using PHP, MySQL, jQuery, JS, HTML5, CSS3, Laravel 4.2</a> | <a href="http://wannaplay.site"></dd>
+    <p></p>
     <p>Model-View-Controller (MVC) Content Management System (CMS) website programmed using Laravel framework, PHP, MySQL, JavaScript, jQuery, HTML5, and CSS. Added image uploading. Developed many-to-many relationship with pivot table in MySQL to add Tagging.</p>
     <p><a class="btn btn-default" href="{{{ action('HomeController@showHome') }}}" role="button">Visit Vagabondtrip.com &raquo;</a></p>
   </div>
