@@ -38,6 +38,7 @@
                       <li>
                          <div class="row">
                             <div class="col-md-12">
+                              <a href="http://wannaplay.site">View Group Capstone Project</a><br>
                               <a href="{{action("HomeController@showHome") }}">Demo CMS Travel Blog Project</a><br>
                                <a href="{{action("HomeController@showWineseller") }}">View Website Project Homepage</a><br>
                                <a href="http://venueandvine.com">Visit Personal Wine Blog</a><br>

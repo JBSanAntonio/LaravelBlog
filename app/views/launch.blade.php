@@ -5,7 +5,7 @@
 
 @section('content')
 
-	<p class = "portfolioCover">The HOME PAGE</p>
+	<p class = "portfolioCover">Julie_Buser_FULLSTACK_WEB_DEVELOPER</p>
 
 
 <script>
