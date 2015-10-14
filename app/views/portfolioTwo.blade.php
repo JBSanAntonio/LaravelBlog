@@ -8,17 +8,21 @@
 <div class="portfolioBody flex-container">
 
   <div class="grid-item--width3 flex-item js-masonry project proj1 flex-item">
-    <h4>Laravel projects</h4>
-    <dt>MVC Website:</dt>
-    <dd>Model-view-controller (MVC) Create, Read, Update, and Delete (CRUD) team project using PHP, MySQL, jQuery, JS, HTML5, CSS3, Laravel 4.2</a> | <a href="http://wannaplay.site"></dd>
-    <p></p>
-    <p>Model-View-Controller (MVC) Content Management System (CMS) website programmed using Laravel framework, PHP, MySQL, JavaScript, jQuery, HTML5, and CSS. Added image uploading. Developed many-to-many relationship with pivot table in MySQL to add Tagging.</p>
-    <p><a class="btn btn-default" href="{{{ action('HomeController@showHome') }}}" role="button">Visit Vagabondtrip.com &raquo;</a></p>
+      <h4>Laravel MVC Website Projects</h4>
+    <div class="firstMVC">
+      <p>Team Project | Model-View-Controller (MVC) Content Management System (CMS) Create, Read, Update, and Delete (CRUD) site programmed using Laravel 4.2 framework, PHP, MySQL, JavaScript, jQuery, HTML5, and CSS3. Developed many-to-many relationship with pivot tables in MySQL to add tagging.</p>
+      <p><a class="btn btn-default" href="http://wannaplay.site">Visit Wannaplay.site &raquo;</a></dd>
+      <p></p>
+    </div>
+    <div class="secondMVC">
+      <p>MVC CMS website programmed using Laravel framework, PHP, MySQL, JavaScript, jQuery, HTML5, and CSS. Added image uploading and tagging. </p>
+      <p><a class="btn btn-default" href="{{{ action('HomeController@showHome') }}}" role="button">Visit Vagabondtrip.com &raquo;</a></p>
+    </div>
   </div>
 
   <div class="grid js-masonry project proj2 flex-item">
     <h4>API Ajax Weather Map</h4>
-    <p>3-day weather forecast using OpenWeatherMap API, GoogleMaps API, and geocoding</p>
+    <p>Three-day weather forecast using OpenWeatherMap API, GoogleMaps API, and geocoding</p>
     <p><a class="btn btn-default" href="{{{ action('HomeController@showWeatherAPI') }}}" role="button">View Weather &raquo;</a></p>
   </div>
 
@@ -29,8 +33,8 @@
   </div>
 
   <div class="grid js-masonry project proj4 flex-item">
-    <h4>Model-View-Controller Website</h4>
-    <p>Model-view-controller (MVC) team project using PHP, MySQL, HTML, CSS, and Github version control</p>
+    <h4>MVC CMS Site</h4>
+    <p>Two-person team project using PHP, MySQL, HTML, CSS, and Github version control</p>
     <p><a class="btn btn-default" href="{{{ action('HomeController@showWineseller') }}}" role="button">View Home Page &raquo;</a></p>
   </div>
 

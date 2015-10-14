@@ -5,7 +5,10 @@
 
 @section('content')
 
-	<p class = "portfolioCover">Julie_Buser_FULLSTACK_WEB_DEVELOPER</p>
+<div id="container" class="container-fluid portfolioCover">
+	<p>Julie Buser</p>
+	<p>Fullstack Web Developer</p>
+</div>
 
 
 <script>

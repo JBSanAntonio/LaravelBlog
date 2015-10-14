@@ -67,14 +67,17 @@ body {
 
 	font-family: 'Poiret One', Book Antiqua, "Helvetica Neue", sans-serif;
 }
+.welcome {
+	text-align: left;
+}
 .OR {
 	text-align: center;
 }
 h1, h5  {
 	text-indent: 3em;
 }
-.header {
-
+.top {
+	height: 200px;
 }
 
 .navbar {

@@ -10,7 +10,13 @@
 
 }
 .logoWineseller {
-
+	padding: 0.2em;
+}
+.welcome {
+	text-align: left;
+}
+.header {
+	padding: 2em;
 }
 .footer {
 	text-align: center;

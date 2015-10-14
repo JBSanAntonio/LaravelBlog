@@ -19,20 +19,20 @@
 </head>
 
 <body>
-  <main class="container-fluid">
+ {{--  <main class="container-fluid"> --}}
     
   <div class = "top">
-    <div row>
-      <div class = "col-md-4">
+    <div class = "row">
+      <div class = "col-md-3">
         <img class = "logoWineseller image" src="http:/img/logoWineseller.png">
       </div>
 
-      <div class = "col-md-8">
+      <div class = "col-md-9 welcome">
         <h1>Welcome To Wine Seller</h1>
       </div>
     </div>
-  </div>
-
+{{--   </div>
+ --}}
     
 <nav class="navbar navbar-default">
   <div class="container-fluid">

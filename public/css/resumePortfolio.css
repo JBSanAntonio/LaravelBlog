@@ -14,10 +14,11 @@
    -webkit-align-content: flex-start; /* Safari */
   align-content:         flex-start;
 }
-/*.flex-item {
-  -webkit-flex-grow: <number>;  Safari 
-  flex-grow:         <number>;
-}*/
+.flex-item {
+	padding: 0.5em;
+  	/*-webkit-flex-grow: <number>;  Safari 
+  	flex-grow:         <number>;*/
+}
 .grid {
 	columnWidth: 200px;
 	width: 30%;
@@ -25,6 +26,7 @@
 }
 .grid-item--width3 { 
 	width: 100%; 
+	margin-bottom: 2em;
 }
 
 .title {
@@ -126,6 +128,12 @@ footer a{
     width: auto;
     vertical-align: top;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+.firstMVC {
+	margin-top: 1em;
+}
+.secondMVC {
+	margin-top: 1.5em;
 }
 /*.portfolioCover {
     color: #666;
