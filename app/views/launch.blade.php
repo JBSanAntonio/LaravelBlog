@@ -7,7 +7,7 @@
 
 <div id="container" class="container-fluid portfolioCover">
 	<p>Julie Buser</p>
-	<p>Fullstack Web Developer</p>
+	<p>Full Stack Web Developer</p>
 </div>
 
 
